@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D04F44;
+}
+
+/***************| FORMULÁRIO |*************/
+
+section#areaForm {
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 20%;
+    padding: 25px;
+}
+
+h2{
+    color: #FFF;
+    text-shadow: 5px 5px 0px #B6433C;
+    position: absolute;
+    top: -15%;
+    left: 0;
+}
+
+.inputs {
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #D04F44;
+    transition: all 0.1s ease-in;
+    color: #999;
+    outline: none;
+}
+
+.inputs:focus {
+    border-bottom: 2px solid #D04F44;
+}
+
+span#icon {
+    background: none;
+    border: none;
+    font-size: 18pt;
+    padding-top: 10px;
+    color: #D04F44;
+}
+
+button#button {
+    float: right;
+}
+
+div#row {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #39B38B;
+}
+
+blockquote {
+    border-color: #39B38B;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 5px 0;
+}
+
+label {
+   position: absolute;
+   margin: 3px;
+   color: #666;
+}
+
+
+
+
