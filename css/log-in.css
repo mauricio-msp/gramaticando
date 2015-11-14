@@ -11,7 +11,8 @@ html,body {
 section#areaForm {
     position: absolute;
     display: block;
-    margin: 12% 25%;
+    top: 25%;
+    left: 25%;
     width: 50%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -40,5 +41,5 @@ input[type=text] {
 }
 
 nav#menu ul li {
-    padding: 5px;
+    padding: 8px;
 }
