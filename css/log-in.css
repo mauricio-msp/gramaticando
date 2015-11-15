@@ -26,8 +26,11 @@ form#form {
     width: 80%;
 }
 
+label {
+    font-size: 16pt;
+}
 input[type=text] {
-    height: 80px;
+    height: 60px;
     font-size: 18pt;
 }
 

@@ -22,30 +22,30 @@ and open the template in the editor.
         <section id="areaForm" class="jumbotron">
             <form method="post" action="" id="form" name="form">
                 <div class="form-group">
-                    <label for="exampleInputNome">Nome do Usuário</label>
+                    <label for="exampleInputNome">Digite seu nome para jogar</label>
                     <input type="text" class="form-control" id="exampleInputNome" placeholder="Nome Completo" required>
-                 </div>
-            </form> <br/>
-            
-            <nav id="menu">
-                <ul class="pager">
-                    <li data-toggle="tooltip" title="Jogar" data-placement="left">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </a>
-                    </li>
-                    <li data-toggle="tooltip" title="Regras" data-placement="top">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-list-alt"></span>
-                        </a>
-                    </li>
-                    <li data-toggle="tooltip" title="Ranking" data-placement="right">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-indent-right"></span>
-                        </a>
-                    </li>
-                </ul>
-          </nav>
+                 </div> <br/>
+                
+                 <nav id="menu">
+                        <ul class="pager">
+                            <li data-toggle="tooltip" title="Jogar" data-placement="left">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" title="Regras" data-placement="top">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-list-alt"></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" title="Ranking" data-placement="right">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-indent-right"></span>
+                                </a>
+                            </li>
+                        </ul>
+                  </nav>
+            </form> 
         </section>
         
          <!-- ########## SCRIPTS ####33333 -->

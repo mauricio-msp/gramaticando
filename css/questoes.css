@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* WELL */
+.well {
+    border-radius: 0;
+}
+
+html,body {
+     background-color: #0275D8;
+}
+
+header#question {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+header#question p {
+    text-align: center;
+    color: #036;
+}
+
+aside#static-left {
+    position: absolute;
+    display: block;
+    width: 250px;
+    left: 0;
+    top: 15%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+aside#help-right {
+    position: absolute;
+    display: block;
+    width: 250px;
+    right: 0;
+    top: 15%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+h2 {
+    position: absolute;
+    text-indent: 1.8em;
+    color:#FFF;
+    top: -12%;
+}
+
+nav#dados {
+  width: 100%;
+}
+
+nav#dados ul li {
+    text-align: center;
+    text-indent: -2.8em;
+}
+
+nav#dados ul li a {
+    font-size:  14pt;
+}
+
+span {
+    font-size: 15pt;
+}
+
+section#itens {
+    position: absolute;
+    display: block;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+}
+
+section#itens nav#alernativas ul li a.alter{
+    width: 50%;
+    border: none;
+}
+
+footer#temp {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 60px;
+    bottom: -5%;
+    left: 25%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+footer#temp p {
+    text-align: center;
+    color: #036;
+}
