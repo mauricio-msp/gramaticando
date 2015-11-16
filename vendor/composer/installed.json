@@ -1,0 +1,44 @@
+[
+    {
+        "name": "php-activerecord/php-activerecord",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jpfuentes2/php-activerecord.git",
+            "reference": "c61a9d9b1cd0aa852fa7f0704759de3812037739"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jpfuentes2/php-activerecord/zipball/c61a9d9b1cd0aa852fa7f0704759de3812037739",
+            "reference": "c61a9d9b1cd0aa852fa7f0704759de3812037739",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "pear/log": "~1.12",
+            "pear/pear_exception": "1.0-beta1",
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2015-08-11 16:40:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "ActiveRecord.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "php-activerecord is an open source ORM library based on the ActiveRecord pattern.",
+        "homepage": "http://www.phpactiverecord.org/",
+        "keywords": [
+            "activerecord",
+            "orm"
+        ]
+    }
+]

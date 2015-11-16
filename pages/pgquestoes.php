@@ -74,26 +74,26 @@ and open the template in the editor.
             <nav>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <a href="#"> 
+                        <button class="btn btn-default">
                             <span class="glyphicon glyphicon-share-alt"></span>
-                        </a>
+                        </button>
                     </li> <br><br>
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <a href="#"> 
+                        <button class="btn btn-default">
                             <span class="glyphicon glyphicon-share-alt"></span>
-                        </a>
+                        </button>
                     </li> <br><br>
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <a href="#"> 
+                        <button class="btn btn-default">
                             <span class="glyphicon glyphicon-share-alt"></span>
-                        </a>
-                    </li>
+                        </button>
+                    </li> <br><br>
                 </ul>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Pedir Ajuda" data-placement="left">
-                        <a href="#"> 
+                        <button class="btn btn-default">
                             <span class="glyphicon glyphicon-user"></span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <ul class="pager well">

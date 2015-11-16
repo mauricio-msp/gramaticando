@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Amenity.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303185541" remote="130874354300000000" Dst="1" />
+<file name="Author.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303195538" remote="130874354300000000" Dst="1" />
+<file name="AuthorAttrAccessible.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303195538" remote="130874354300000000" Dst="1" />
+<file name="AwesomePerson.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303205542" remote="130874354300000000" Dst="1" />
+<file name="Book.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303205542" remote="130874354300000000" Dst="1" />
+<file name="BookAttrAccessible.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303215547" remote="130874354300000000" Dst="1" />
+<file name="BookAttrProtected.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303225568" remote="130874354300000000" Dst="1" />
+<file name="Employee.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303235564" remote="130874354300000000" Dst="1" />
+<file name="Event.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303235564" remote="130874354300000000" Dst="1" />
+<file name="Host.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303245569" remote="130874354300000000" Dst="1" />
+<file name="JoinAuthor.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303245569" remote="130874354300000000" Dst="1" />
+<file name="JoinBook.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303255590" remote="130874354300000000" Dst="1" />
+<file name="Position.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303295600" remote="130874354300000000" Dst="1" />
+<file name="Property.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303305604" remote="130874354300000000" Dst="1" />
+<file name="PropertyAmenity.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303315613" remote="130874354300000000" Dst="1" />
+<file name="Publisher.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303315613" remote="130874354300000000" Dst="1" />
+<file name="RmBldg.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303315613" remote="130874354300000000" Dst="1" />
+<file name="Venue.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303325614" remote="130874354300000000" Dst="1" />
+<file name="VenueAfterCreate.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303335630" remote="130874354300000000" Dst="1" />
+<file name="VenueCB.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303335630" remote="130874354300000000" Dst="1" />
+</dwsync>

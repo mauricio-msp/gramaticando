@@ -3,12 +3,7 @@
 /** @var string */ 
 $host = is_string($_SERVER["HTTP_HOST"]) ? $_SERVER["HTTP_HOST"] : "" ; 
 
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASS', 'vertrigo');
-define('DBSA', 'gramaticando');
-
-define('RAIZ', "http://{$host}/Gramaticando/");
+define('RAIZ', "http://{$host}/Zcomics/");
 
 // AUTO LOAD DE CLASSES ########################################################
 function __autoload($Class) {
@@ -29,4 +24,3 @@ function __autoload($Class) {
         die;
     }
 }
-

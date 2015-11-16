@@ -1,25 +1,23 @@
-<?php
-
-/**
- * Description of conexao
- *
- * @author Maurício
- */
-
- /** Inclui o arquivo de configurações gerais*/
-    include_once('Classes/Config.inc.php');
-
-class conexao {
-
-   public function conectar() {
-        
-        try{
-            $pdo = new PDO("mysql:host=". HOST .";dbname=". DBSA , USER, PASS);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE,  PDO::ERRMODE_EXCEPTION);
-        }catch(PDOException $e){
-            echo "Erro ao conectar ao banco " . $e->getMessage();
-        }
-        
-    }
-    
-}
+﻿<?php
+	
+	if(file_exists("vendor/php-activerecord/php-activerecord/ActiveRecord.php")):
+		require_once "vendor/php-activerecord/php-activerecord/ActiveRecord.php";
+	elseif(file_exists("../vendor/php-activerecord/php-activerecord/ActiveRecord.php")):
+		require_once "../vendor/php-activerecord/php-activerecord/ActiveRecord.php";
+	elseif(file_exists("../../vendor/php-activerecord/php-activerecord/ActiveRecord.php")):
+		require_once "../../vendor/php-activerecord/php-activerecord/ActiveRecord.php";
+	endif;
+	
+	if(file_exists("models")):
+		$model = "models";
+	elseif(file_exists("../models")):
+		$model = "../models";
+	elseif(file_exists("../../models")):
+		$model = "../../models";
+	endif;
+	
+	$cfg = ActiveRecord\Config::instance();
+ 	$cfg->set_model_directory($model);
+	$cfg->set_connections(array('development' =>
+	  'mysql://root:@localhost/gramaticando'));
+		

@@ -17,6 +17,35 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/login_ajax.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#playGame').click(function(){
+                    var input = $('#exampleInputNome').val();
+                    if(input === "" || input === " "){
+                        alert('Preencha o campo');
+                    }else{
+                        var data = Array(input);
+                        $.ajax(function(){
+                            type:"Post",
+                            data: data,
+                            url: "../functions/funcInserir",
+                            beforeSend: function () {
+                                
+                            },
+                            success: function (data) {
+                                if(data === 1){
+                                    
+                                else if(data === 2){
+                                       
+                                }else if(data === 3){
+                                    
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
     </head>
     <body>
         <section id="areaForm" class="jumbotron">
@@ -29,8 +58,8 @@ and open the template in the editor.
                  <nav id="menu">
                         <ul class="pager">
                             <li data-toggle="tooltip" title="Jogar" data-placement="left">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-user"></span>
+                                <a href="#" id="playGame">
+                                    <span class="glyphicon glyphicon-play"></span>
                                 </a>
                             </li>
                             <li data-toggle="tooltip" title="Regras" data-placement="top">

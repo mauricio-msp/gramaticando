@@ -1,18 +1,16 @@
 <?php
     
-    require_once '../Classes/DAO/inserir.php';
-    require_once '../Classes/DAO/ler.php';
-
-    if(!isset($_POST['cadastro'])):
+    require_once '../Classes/DAO/conexao.php';
+    
+    if(isset($_REQUEST['nome'])):
+        $data['nome'] = $_REQUEST['nome'];
+        $ver = Users::create($data);
         
-        $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-        if(!ler($nome)):
-            if(inserir($nome)):
-            	echo 1;
-            else:
-                echo 2;
-            endif;
+        if (count($ver) > 0):
+            echo 1;
         else:
-            echo 3;
+            echo 2;
         endif;
+    else:
+        echo 3;
     endif;

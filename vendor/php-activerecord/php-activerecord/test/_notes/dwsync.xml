@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ActiveRecordCacheTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302725220" remote="130874354300000000" Dst="1" />
+<file name="ActiveRecordFindTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302735245" remote="130874354300000000" Dst="1" />
+<file name="ActiveRecordTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302735245" remote="130874354300000000" Dst="1" />
+<file name="ActiveRecordWriteTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302745253" remote="130874354300000000" Dst="1" />
+<file name="CacheModelTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302745253" remote="130874354300000000" Dst="1" />
+<file name="CacheTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302755258" remote="130874354300000000" Dst="1" />
+<file name="CallbackTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302765246" remote="130874354300000000" Dst="1" />
+<file name="ColumnTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302765246" remote="130874354300000000" Dst="1" />
+<file name="ConfigTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302775251" remote="130874354300000000" Dst="1" />
+<file name="ConnectionManagerTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302775251" remote="130874354300000000" Dst="1" />
+<file name="ConnectionTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302785268" remote="130874354300000000" Dst="1" />
+<file name="DateFormatTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302795272" remote="130874354300000000" Dst="1" />
+<file name="DateTimeTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302795272" remote="130874354300000000" Dst="1" />
+<file name="ExpressionsTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302815285" remote="130874354300000000" Dst="1" />
+<file name="HasManyThroughTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302815285" remote="130874354300000000" Dst="1" />
+<file name="InflectorTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302825290" remote="130874354300000000" Dst="1" />
+<file name="ModelCallbackTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302835303" remote="130874354300000000" Dst="1" />
+<file name="MysqlAdapterTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302845307" remote="130874354300000000" Dst="1" />
+<file name="OciAdapterTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302845307" remote="130874354300000000" Dst="1" />
+<file name="PgsqlAdapterTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302855308" remote="130874354300000000" Dst="1" />
+<file name="RelationshipTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302855308" remote="130874354300000000" Dst="1" />
+<file name="SerializationTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302865325" remote="130874354300000000" Dst="1" />
+<file name="SQLBuilderTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302865325" remote="130874354300000000" Dst="1" />
+<file name="SqliteAdapterTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302875317" remote="130874354300000000" Dst="1" />
+<file name="UtilsTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302885330" remote="130874354300000000" Dst="1" />
+<file name="ValidatesFormatOfTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302885330" remote="130874354300000000" Dst="1" />
+<file name="ValidatesInclusionAndExclusionOfTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302895330" remote="130874354300000000" Dst="1" />
+<file name="ValidatesLengthOfTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302895330" remote="130874354300000000" Dst="1" />
+<file name="ValidatesNumericalityOfTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302905351" remote="130874354300000000" Dst="1" />
+<file name="ValidatesPresenceOfTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302905351" remote="130874354300000000" Dst="1" />
+<file name="ValidationsTest.php" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354302915356" remote="130874354300000000" Dst="1" />
+</dwsync>

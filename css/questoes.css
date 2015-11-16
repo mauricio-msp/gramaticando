@@ -11,6 +11,7 @@
 
 html,body {
      background-color: #0275D8;
+     font-family: 'Square721 BT', sans-serif;
 }
 
 header#question {
@@ -67,8 +68,13 @@ nav#dados ul li a {
     font-size:  14pt;
 }
 
+button {
+    border-radius: 30% !important;
+}
+
 span {
     font-size: 15pt;
+    color: #0275D8;
 }
 
 section#itens {
