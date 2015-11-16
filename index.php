@@ -2,13 +2,7 @@
 
     /** Inclui o arquivo de configurações */
     include_once('Classes/Config.inc.php');
-    include_once('Classes/DAO/conexao.php');
-
-    /* Abrindo a conexão*/
-    $open = new conexao();
-    $open->conectar();
-    
-    
+   
     /** @var Url */
     $url = Url::getInstance();
     
