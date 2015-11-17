@@ -17,35 +17,6 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/login_ajax.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('#playGame').click(function(){
-                    var input = $('#Nome').serialize();
-                    if(input === "" || input === " "){
-                        alert('Preencha o campo');
-                    }else{
-                        $.ajax({
-                            type: "Post",
-                            data: input,
-                            url: "functions/funcInserir.php",
-                            beforeSend: function () {
-                                
-                            },
-                            success: function (data) {
-                                if(data === 1){
-                                    
-								}else if(data === 2){
-                                       
-                                }else if(data === 3){
-                                    
-                                }
-                            }
-                        });
-                    }
-					return false;
-                });
-            });
-        </script>
     </head>
     <body>
         <section id="areaForm" class="jumbotron">
@@ -58,17 +29,17 @@ and open the template in the editor.
                  <nav id="menu">
                         <ul class="pager">
                             <li data-toggle="tooltip" title="Jogar" data-placement="left">
-                                <a href="#" id="playGame">
+                                <a href="javascript:void();" id="playGame">
                                     <span class="glyphicon glyphicon-play"></span>
                                 </a>
                             </li>
                             <li data-toggle="tooltip" title="Regras" data-placement="top">
-                                <a href="#">
+                                <a href="javascript:void();">
                                     <span class="glyphicon glyphicon-list-alt"></span>
                                 </a>
                             </li>
                             <li data-toggle="tooltip" title="Ranking" data-placement="right">
-                                <a href="#">
+                                <a href="javascript:void();">
                                     <span class="glyphicon glyphicon-indent-right"></span>
                                 </a>
                             </li>

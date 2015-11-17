@@ -1,28 +1,29 @@
 // JavaScript Document
 
-$(document).ready(function() {
-    
-	$('#login_form').submit(function(){
-		var dados = $(this).serialize();
-		
-		$.ajax({
-			type: "POST",
-			url: 'functions/funcInserir.php',
-			data: dados,
-			beforeSend:function(){
-				$('#button').attr('disabled', 'disabled');
-			},
-			success: function(data){
-				if(data == 1){
-					window.location='questoes';
-				}else if(data == 2){
-					alert('Houve um problema com o registro');
-				}else if(data == 3){
-					alert('Nome já registrado');
+$(document).ready(function(){
+	$('#playGame').click(function(){
+		var input = $('#Nome').serialize();
+		if(input === "" || input === " "){
+			alert('Preencha o campo');
+		}else{
+			$.ajax({
+				type: "Post",
+				data: input,
+				url: "functions/funcInserir.php",
+				beforeSend: function () {
+					
+				},
+				success: function (data) {
+					if(data === 1){
+						
+					}else if(data === 2){
+						
+					}else if(data === 3){
+						
+					}
 				}
-				$('#button').removeAttr('disabled');
-			}
-		});
+			});
+		}
 		return false;
 	});
 });

@@ -6,4 +6,10 @@
 <file name="pgsql-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303365661" remote="130874354300000000" Dst="1" />
 <file name="pgsql.sql" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303375665" remote="130874354300000000" Dst="1" />
 <file name="sqlite.sql" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303375665" remote="130874354300000000" Dst="1" />
+<file name="mysql.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130921923711057258" remote="130921923710000000" Dst="0" />
+<file name="oci-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130921923711067250" remote="130921923710000000" Dst="0" />
+<file name="oci.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130921923711067250" remote="130921923710000000" Dst="0" />
+<file name="pgsql-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130921923711077267" remote="130921923710000000" Dst="0" />
+<file name="pgsql.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130921923711077267" remote="130921923710000000" Dst="0" />
+<file name="sqlite.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130921923711127318" remote="130921923710000000" Dst="0" />
 </dwsync>
