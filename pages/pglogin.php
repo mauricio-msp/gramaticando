@@ -33,7 +33,7 @@ and open the template in the editor.
                                     <span class="glyphicon glyphicon-play"></span>
                                 </a>
                             </li>
-                            <li data-toggle="tooltip" title="Regras" data-placement="top">
+                            <li data-toggle="tooltip" title="Regras" data-placement="top" id="reg">
                                 <a href="javascript:void();">
                                     <span class="glyphicon glyphicon-list-alt"></span>
                                 </a>
@@ -48,7 +48,23 @@ and open the template in the editor.
             </form> 
         </section>
         
-         <!-- ########## SCRIPTS ####33333 -->
+        <!-- Janela Modal -->
+        
+        <div class="modal fade" id="win-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Regras</h4>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body&hellip;</p>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        
+        <!-- ########## SCRIPTS ####33333 -->
             <script type="text/javascript">
                 jQuery(function (){
                     $('li').hover(function(){
@@ -56,6 +72,20 @@ and open the template in the editor.
                     },function(){
                         $(this).tooltip('destroy');
                     });
+                    
+                        // Mascara e Window Modal 
+                        $('#reg').click(function(){
+                            $('#mascara').show();
+                            // Modal 
+                            $('#win-modal').modal('show');
+                        });
+                        
+                            //Ocultar Mascara e Window Modal
+                            $('#mascara').click(function(){
+                               $(this).hide();
+                               //Modal
+                               $('#win-modal').modal('destroy');
+                            });
                 });
             </script>
     </body> 
