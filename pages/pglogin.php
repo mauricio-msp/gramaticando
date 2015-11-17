@@ -29,9 +29,9 @@ and open the template in the editor.
                  <nav id="menu">
                         <ul class="pager">
                             <li data-toggle="tooltip" title="Jogar" data-placement="left">
-                                <a href="javascript:void();" id="playGame">
+                                <button type="submit" name="jogar" id="playGame" class="btn btn-primary">
                                     <span class="glyphicon glyphicon-play"></span>
-                                </a>
+                                </button>
                             </li>
                             <li data-toggle="tooltip" title="Regras" data-placement="top" id="reg">
                                 <a href="javascript:void();">

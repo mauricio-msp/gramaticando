@@ -49,3 +49,8 @@ input[type=text] {
 nav#menu ul li {
     padding: 8px;
 }
+
+button.btn-primary {
+    border-radius: 40%;
+    height: 32px;
+}
