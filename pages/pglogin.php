@@ -55,10 +55,30 @@ and open the template in the editor.
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title">Regras</h4>
+                  <h4 class="modal-title">Regras Gerais</h4>
                 </div>
                 <div class="modal-body">
-                  <p>One fine body&hellip;</p>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">1</span>
+                      Cada pergunta terá um tempo máximo estipulado para as respostas, que é de 30 segundos
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">2</span>
+                      A cada acerto o jogador dobra sua pontuação atual <br/> &nbsp;&nbsp;&nbsp;
+                      EX: Se você estiver com 16 pts, seus pts irão para 32 pts.
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">3</span>
+                      O jogador tem direito a 3 pulos e consultar os "amigos".
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">4</span>
+                      Em caso de resposta errada, o jogador ganha o equivalente a quarta parta de pts.
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">5</span>
+                      Se você preferir parar, você ganha a metade do seus pts.
+                  </p> <br/>
                 </div>
               </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
