@@ -14,15 +14,15 @@ jQuery(document).ready(function(){
 					
 				},
 				success: function (data) {
-                                    if(data == 1){
-                                        window.location = 'questoes';
-                                    }else if(data == 2){
-                                        alert('Erro ao cadastrar nome');
-                                    }else if(data == 3){
-                                        alert('Dados não enviados');
-                                    }else{
-                                        alert('Nome já cadastrado');
-                                    }
+					if(data == 1){
+						window.location = 'questoes';
+					}else if(data == 2){
+						alert('Erro ao cadastrar nome');
+					}else if(data == 3){
+						alert('Dados não enviados');
+					}else if(data == 4){
+						alert('Nome já cadastrado');
+					}
 				}
 			});
 		}
