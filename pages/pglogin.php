@@ -12,10 +12,10 @@ and open the template in the editor.
         <title>Desafio - Gramaticando</title>
         <!--CSS Bootstrap 3.3.5 -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/log-in.css" />
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
         <!--JS Bootstrap 3.3.5 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/login_ajax.js"></script>
+        <script src="js/ajaxLogin.js"></script>
         <script src="js/bootstrap.js"></script>
     </head>
     <body>
