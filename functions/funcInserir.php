@@ -2,8 +2,8 @@
     
     require_once '../Classes/DAO/conexao.php';
     
-    if(isset($_REQUEST['nome'])):
-        $data['nome'] = $_REQUEST['nome'];
+    if(isset($_POST['Nome'])):
+        $data['nome'] = $_POST['Nome'];
         $ver = Users::create($data);
         
         if (count($ver) > 0):
@@ -14,3 +14,5 @@
     else:
         echo 3;
     endif;
+	
+?>

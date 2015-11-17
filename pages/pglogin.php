@@ -20,22 +20,21 @@ and open the template in the editor.
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#playGame').click(function(){
-                    var input = $('#exampleInputNome').val();
+                    var input = $('#Nome').serialize();
                     if(input === "" || input === " "){
                         alert('Preencha o campo');
                     }else{
-                        var data = Array(input);
-                        $.ajax(function(){
-                            type:"Post",
-                            data: data,
-                            url: "../functions/funcInserir",
+                        $.ajax({
+                            type: "Post",
+                            data: input,
+                            url: "functions/funcInserir.php",
                             beforeSend: function () {
                                 
                             },
                             success: function (data) {
                                 if(data === 1){
                                     
-                                else if(data === 2){
+								}else if(data === 2){
                                        
                                 }else if(data === 3){
                                     
@@ -43,6 +42,7 @@ and open the template in the editor.
                             }
                         });
                     }
+					return false;
                 });
             });
         </script>
@@ -52,7 +52,7 @@ and open the template in the editor.
             <form method="post" action="" id="form" name="form">
                 <div class="form-group">
                     <label for="exampleInputNome">Digite seu nome para jogar</label>
-                    <input type="text" class="form-control" id="exampleInputNome" placeholder="Nome Completo" required>
+                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome Completo" required>
                  </div> <br/>
                 
                  <nav id="menu">
