@@ -51,20 +51,22 @@ and open the template in the editor.
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
                         <a href="#"> 
-                            <p>Prêmio R$ <span id="premio">0</span> </p>
-                            <p>Parar  R$ <span id="parar">0</span> </p>
-                            <p>Perde  R$ <span id="perde">0</span> </p>
+                            <p>Prêmio pts <span id="premio">0</span> </p>
+                            <p>Parar  pts <span id="parar">0</span> </p>
+                            <p>Perde  pts <span id="perde">0</span> </p>
                         </a>
                     </li>
                     <li class="text-uppercase well">
                         <a href="#"> 
-                            Jogador <br>
-                        	<span><?=$user->nome ?></span> 
+                            <span style="text-decoration: underline;">Jogador</span> <br/>
+                            <span style="font-size: 10pt;margin-right: 50px;">
+                                <?php echo $user->nome; ?>
+                            </span> 
                         </a>
                     </li>
                      <li class="text-uppercase well">
                         <a href="#"> 
-                            Faltam 
+                            <span style="text-decoration: underline;">Faltam</span> <br/>
                         </a>
                     </li>
                 </ul>

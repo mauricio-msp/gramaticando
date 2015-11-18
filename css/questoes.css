@@ -32,6 +32,7 @@ aside#static-left {
     position: absolute;
     display: block;
     width: 250px;
+    height: 100%;
     left: 0;
     top: 15%;
     border-bottom-right-radius: 5px;
@@ -42,6 +43,7 @@ aside#help-right {
     position: absolute;
     display: block;
     width: 250px;
+    height: 100%;
     right: 0;
     top: 15%;
     border-bottom-left-radius: 5px;
