@@ -1,8 +1,8 @@
 // JavaScript Document
 
 jQuery(document).ready(function(){
-	$('#playGame').click(function(){
-		var input = $('#Nome').serialize();
+	$('#form').submit(function(){
+		var input = $(this).serialize();
 		if(input === "" || input === " "){
 			alert('Preencha o campo');
 		}else{
