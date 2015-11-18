@@ -46,6 +46,19 @@ aside#help-right {
     border-top-left-radius: 5px;
 }
 
+div#block{ 
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100%;
+    right: 0;
+    top: 15%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(0,0,0,.4);
+    z-index: 900;
+}
+ 
 h2 {
     position: absolute;
     text-indent: 1.8em;

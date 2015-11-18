@@ -85,12 +85,15 @@ and open the template in the editor.
                 </ul>
                 <ul class="pager" id="neg">
                   <li><a href="javascript:void();" id="stop">Parar</a></li> 
-                  <li><a href="#">Ajuda</a></li>
+                  <li id="desblock"><a href="#">Ajuda</a></li>
                 </ul>
             </nav>
         </section>
         
         <!-- Area da Ajuda -->
+        
+        <div id="block"></div>
+        
         <aside id="help-right" class="jumbotron">
             <h2> Ajuda </h2>
             
@@ -119,7 +122,7 @@ and open the template in the editor.
                         </button>
                     </li>
                 </ul>
-                <ul class="pager well">
+                <ul class="pager well" style="z-index: 999">
                     <li data-toggle="tooltip" title="Informações" data-placement="left">
                         <a href="#"> 
                             <span class="glyphicon glyphicon-info-sign"></span>
@@ -146,7 +149,11 @@ and open the template in the editor.
                   },function(){
                       $(this).tooltip('destroy');
                   });
-              });
+                  
+                  $('#desblock').click(function(){
+                    $('#block').hide();
+                  });
+               });
           </script>
     </body>
     
