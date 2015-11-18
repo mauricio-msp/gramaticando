@@ -3,7 +3,7 @@
     require_once '../Classes/DAO/conexao.php';
     
     if(isset($_POST['Nome'])):
-        $data['nome'] = $_POST['Nome'];
+        $data['nome'] = strip_tags(trim(addslashes(ucwords($_POST['Nome']))));
         $user = Users::find_by_nome($data['nome']);
         if(count($user) <= 0):
             $ver = Users::create($data);

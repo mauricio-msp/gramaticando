@@ -7,9 +7,11 @@
 			$user = Users::find($_SESSION['user_gram']);
 			if(count($user) <= 0):
 				echo '<script>alert("Pagina fora de validação");window.location=\'login\'</script>';
+				die();
 			endif;
 		else:
 			echo '<script>alert("Pagina fora de validação");window.location=\'login\'</script>';
+			die();
 		endif;
 		
 	?>
@@ -33,6 +35,24 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/login_ajax.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script>
+        	jQuery(document).ready(function() {
+                $('#stop').click(function(){
+					$.ajax({
+						url: 'functions/funcParar.php',
+						beforeSend: function(){
+							
+						},
+						success: function(data){
+							if(data == 1){
+								window.location='login';
+							}
+						}
+					});
+					return false;
+				});
+            });
+        </script>
     </head>
     <body>
         
@@ -77,7 +97,7 @@ and open the template in the editor.
                   <li><a href="#" class="alter">Previous</a></li> <br/><br/>
                 </ul>
                 <ul class="pager" id="neg">
-                  <li><a href="#">Parar</a></li> 
+                  <li><a href="javascript:void();" id="stop">Parar</a></li> 
                   <li><a href="#">Ajuda</a></li>
                 </ul>
             </nav>
@@ -144,8 +164,3 @@ and open the template in the editor.
     </body>
     
 </html>
-<div hidden="true">
-	<?php
-    	unset($_SESSION['user_gram']);
-	?>
-</div>
