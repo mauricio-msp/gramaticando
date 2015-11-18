@@ -23,7 +23,7 @@ and open the template in the editor.
             <form method="post" action="" id="form" name="form">
                 <div class="form-group">
                     <label for="exampleInputNome">Digite seu nome para jogar</label>
-                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome Completo" required>
+                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome ou Sobrenome" required>
                  </div> <br/>
                 
                  <nav id="menu">

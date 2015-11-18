@@ -56,17 +56,19 @@ and open the template in the editor.
                             <p>Perde  pts <span id="perde">0</span> </p>
                         </a>
                     </li>
-                    <li class="text-uppercase well">
+                    <li class="well">
                         <a href="#"> 
-                            <span style="text-decoration: underline;">Jogador</span> <br/>
-                            <span style="font-size: 10pt;margin-right: 50px;">
-                                <?php echo $user->nome; ?>
+                            <span style="text-transform: uppercase">
+                                Jogador
+                            </span> <br/>
+                            <span style="font-size: 12pt;margin-right: 50px;color: #333;">
+                                &rsaquo;&rsaquo;<?php echo $user->nome; ?>
                             </span> 
                         </a>
                     </li>
-                     <li class="text-uppercase well">
+                     <li class="well">
                         <a href="#"> 
-                            <span style="text-decoration: underline;">Faltam</span> <br/>
+                            <span style="text-transform: uppercase;">Faltam</span> <br/>
                         </a>
                     </li>
                 </ul>
