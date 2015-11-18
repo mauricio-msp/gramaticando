@@ -1,3 +1,19 @@
+<div hidden="true">
+	<?php
+    	
+		require_once 'Classes/DAO/conexao.php';
+		session_start();
+		if(isset($_SESSION['user_gram'])):
+			$user = Users::find($_SESSION['user_gram']);
+			if(count($user) <= 0):
+				echo '<script>alert("Pagina fora de validação");window.location=\'login\'</script>';
+			endif;
+		else:
+			echo '<script>alert("Pagina fora de validação");window.location=\'login\'</script>';
+		endif;
+		
+	?>
+</div>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -128,3 +144,8 @@ and open the template in the editor.
     </body>
     
 </html>
+<div hidden="true">
+	<?php
+    	unset($_SESSION['user_gram']);
+	?>
+</div>

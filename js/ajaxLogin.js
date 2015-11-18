@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
 				data: input,
 				url: "functions/funcInserir.php",
 				beforeSend: function () {
-					
+					$('#playGame').attr('disabled', 'disabled');
 				},
 				success: function (data) {
 					if(data == 1){
@@ -23,6 +23,7 @@ jQuery(document).ready(function(){
 					}else if(data == 4){
 						alert('Nome já cadastrado');
 					}
+					$('#playGame').removeAttr('disabled');
 				}
 			});
 		}

@@ -9,6 +9,9 @@
             $ver = Users::create($data);
 
             if (count($ver) > 0):
+				session_start();
+				$user = Users::find_by_nome($data['nome']);
+				$_SESSION['user_gram'] = $user->id;
                 echo 1;
             else:
                 echo 2;
