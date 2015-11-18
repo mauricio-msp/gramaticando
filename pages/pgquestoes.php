@@ -33,26 +33,8 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/questoes.css" />
         <!--JS Bootstrap 3.3.5 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/login_ajax.js"></script>
+        <script src="js/questoes.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script>
-        	jQuery(document).ready(function() {
-                $('#stop').click(function(){
-					$.ajax({
-						url: 'functions/funcParar.php',
-						beforeSend: function(){
-							
-						},
-						success: function(data){
-							if(data == 1){
-								window.location='login';
-							}
-						}
-					});
-					return false;
-				});
-            });
-        </script>
     </head>
     <body>
         
@@ -69,14 +51,15 @@ and open the template in the editor.
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
                         <a href="#"> 
-                            <p>Prêmio R$ 0</p> 
-                            <p>Parar  R$ 0 </p>
-                            <p>Perde  R$ 0</p>
+                            <p>Prêmio R$ <span id="premio">0</span> </p>
+                            <p>Parar  R$ <span id="parar">0</span> </p>
+                            <p>Perde  R$ <span id="perde">0</span> </p>
                         </a>
                     </li>
                     <li class="text-uppercase well">
                         <a href="#"> 
-                            Jogador 
+                            Jogador <br>
+                        	<span><?=$user->nome ?></span> 
                         </a>
                     </li>
                      <li class="text-uppercase well">
@@ -91,10 +74,10 @@ and open the template in the editor.
         <section id="itens">
             <nav id="alernativas">
                 <ul class="pager">
-                  <li><a href="#" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="#" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="#" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="#" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="#" rel="item1" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="#" rel="item2" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="#" rel="item3" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="#" rel="item4" class="alter">Previous</a></li> <br/><br/>
                 </ul>
                 <ul class="pager" id="neg">
                   <li><a href="javascript:void();" id="stop">Parar</a></li> 
