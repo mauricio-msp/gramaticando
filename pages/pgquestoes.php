@@ -78,10 +78,15 @@ and open the template in the editor.
         <section id="itens">
             <nav id="alernativas">
                 <ul class="pager">
-                  <li><a href="#" rel="item1" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="#" rel="item2" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="#" rel="item3" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="#" rel="item4" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item1" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item2" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item3" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item4" class="alter">Previous</a></li> <br/><br/>
+                </ul>
+                <ul class="pager" id="cert">
+                	<li>Voce tem certeza?</li><br>
+                	<li><a href="javascript:void();" id="yes">Sim</a></li>
+                	<li><a href="javascript:void();" id="not">Não</a></li>
                 </ul>
                 <ul class="pager" id="neg">
                   <li><a href="javascript:void();" id="stop">Parar</a></li> 

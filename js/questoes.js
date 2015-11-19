@@ -1,6 +1,8 @@
 // JavaScript Document
 
 jQuery(document).ready(function() {
+	$('#cert').hide();
+	
 	$('#stop').click(function(){
 		$.ajax({
 			url: 'functions/funcParar.php',
@@ -18,7 +20,13 @@ jQuery(document).ready(function() {
 	
 	$('.alter').click(function(){
 		var rel = $(this).attr('rel').valueOf();
-		alert(rel);
+		$('#neg').hide(500);
+		$('#cert').show(500);
+	});
+	
+	$('#not').click(function(){
+		$('#neg').show(500);
+		$('#cert').hide(500);
 	});
 	
 });
