@@ -8,6 +8,7 @@
 html,body {
      background-color: #0275D8;
      font-family: 'Square721 BT', sans-serif;
+     overflow-y: hidden;
 }
 
 header#question {
@@ -55,7 +56,7 @@ div#block{
     top: 15%;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.7);
     z-index: 900;
 }
  

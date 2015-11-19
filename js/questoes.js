@@ -20,13 +20,13 @@ jQuery(document).ready(function() {
 	
 	$('.alter').click(function(){
 		var rel = $(this).attr('rel').valueOf();
-		$('#neg').hide(500);
-		$('#cert').show(500);
+		$('#neg').css('display','none');
+		$('#cert').css('display','block');
 	});
 	
 	$('#not').click(function(){
-		$('#neg').show(500);
-		$('#cert').hide(500);
+		$('#neg').css('display','block');
+		$('#cert').css('display','none');
 	});
 	
 	$('#yes').click(function(){
