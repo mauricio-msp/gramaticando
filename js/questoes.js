@@ -29,4 +29,20 @@ jQuery(document).ready(function() {
 		$('#cert').hide(500);
 	});
 	
+	$('#yes').click(function(){
+		
+	});
+	
+	$('.jump').click(function(){
+		
+		$(this).attr('disabled', 'disabled');
+		$(this).tooltip('destroy');
+	});
+	
+	$('.help').click(function(){
+		$(this).attr('disabled', 'disabled');
+		$(this).tooltip('destroy');
+	});
+	
+	
 });

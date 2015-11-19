@@ -90,7 +90,7 @@ and open the template in the editor.
                 </ul>
                 <ul class="pager" id="neg">
                   <li><a href="javascript:void();" id="stop">Parar</a></li> 
-                  <li id="desblock"><a href="#">Ajuda</a></li>
+                  <li id="desblock"><a href="javascript:void();">Ajuda</a></li>
                 </ul>
             </nav>
         </section>
@@ -105,24 +105,24 @@ and open the template in the editor.
             <nav>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <button class="btn btn-default">
+                        <button class="jump btn btn-default">
                             <span class="glyphicon glyphicon-share-alt"></span>
                         </button>
                     </li> <br><br>
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <button class="btn btn-default">
+                        <button class="jump btn btn-default">
                             <span class="glyphicon glyphicon-share-alt"></span>
                         </button>
                     </li> <br><br>
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <button class="btn btn-default">
+                        <button class="jump btn btn-default">
                             <span class="glyphicon glyphicon-share-alt"></span>
                         </button>
                     </li> <br><br>
                 </ul>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Pedir Ajuda" data-placement="left">
-                        <button class="btn btn-default">
+                        <button class="help btn btn-default">
                             <span class="glyphicon glyphicon-user"></span>
                         </button>
                     </li>
