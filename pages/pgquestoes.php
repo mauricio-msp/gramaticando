@@ -22,7 +22,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html lang="pt-br">
+<html lang="es">
     <head>
         <meta charset="UTF-8"/>
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -111,17 +111,17 @@ and open the template in the editor.
             
             <nav>
                 <ul class="pager well">
-                    <li data-toggle="tooltip" title="Saltar" data-placement="left">
+                    <li data-toggle="tooltip" title="Omitir" data-placement="left">
                         <button class="jump btn btn-default" id="jump-one">
                             <span class="glyphicon glyphicon-share-alt jumper-I"></span>
                         </button>
                     </li> <br><br>
-                    <li data-toggle="tooltip" title="Saltar" data-placement="left">
+                    <li data-toggle="tooltip" title="Omitir" data-placement="left">
                         <button class="jump btn btn-default" id="jump-two">
                             <span class="glyphicon glyphicon-share-alt jumper-II"></span>
                         </button>
                     </li> <br><br>
-                    <li data-toggle="tooltip" title="Saltar" data-placement="left">
+                    <li data-toggle="tooltip" title="Omitir" data-placement="left">
                         <button class="jump btn btn-default" id="jump-three">
                             <span class="glyphicon glyphicon-share-alt jumper-III"></span>
                         </button>

@@ -22,23 +22,23 @@ and open the template in the editor.
         <section id="areaForm" class="jumbotron">
             <form method="post" action="" id="form" name="form">
                 <div class="form-group">
-                    <label for="exampleInputNome">Digite seu nome para jogar</label>
-                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome ou Sobrenome" required>
+                    <label for="exampleInputNome">Escriba su nombre para jugar</label>
+                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nombre o Apellido" required>
                  </div> <br/>
                 
                  <nav id="menu">
                         <ul class="pager">
-                            <li data-toggle="tooltip" title="Jogar" data-placement="left">
+                            <li data-toggle="tooltip" title="Juega" data-placement="left">
                                 <button type="submit" name="jogar" id="playGame" class="btn btn-primary">
                                     <span class="glyphicon glyphicon-play"></span>
                                 </button>
                             </li>
-                            <li data-toggle="tooltip" title="Regras" data-placement="top" id="reg">
+                            <li data-toggle="tooltip" title="Reglas" data-placement="top" id="reg">
                                 <a href="javascript:void();">
                                     <span class="glyphicon glyphicon-list-alt"></span>
                                 </a>
                             </li>
-                            <li data-toggle="tooltip" title="Ranking" data-placement="right">
+                            <li data-toggle="tooltip" title="Clasificación" data-placement="right">
                                 <a href="javascript:void();">
                                     <span class="glyphicon glyphicon-indent-right"></span>
                                 </a>
