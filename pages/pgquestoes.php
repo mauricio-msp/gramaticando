@@ -51,21 +51,21 @@ and open the template in the editor.
         
         <!-- Area das estatísticas -->
         <aside id="static-left" class="jumbotron">
-            <h2> Estatística </h2>
+            <h2> Estadísticas </h2>
             
             <nav id="dados">
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
                         <a href="#"> 
-                            <p>Dinheiro R$ <span id="premio">0</span> </p>
-                            <p>Pontuação <span id="parar">0 pts</span> </p>
-                            <p>Parar <span id="perde">0 pts</span> </p>
+                            <p>Dinero R$ <span id="premio">0</span> </p>
+                            <p>Puntuacion <span id="parar">0 pts</span> </p>
+                            <p>Deténgase <span id="perde">0 pts</span> </p>
                         </a>
                     </li>
                     <li class="well">
                         <a href="#"> 
                             <span style="text-transform: uppercase">
-                                Jogador
+                                Jugador
                             </span> <br/>
                             <span style="font-size: 12pt;margin-right: 50px;color: #333;">
                                 &rsaquo;&rsaquo;<?php echo $user->nome; ?>
@@ -74,7 +74,7 @@ and open the template in the editor.
                     </li>
                      <li class="well">
                         <a href="#"> 
-                            <span style="text-transform: uppercase;">Faltam</span> <br/>
+                            <span style="text-transform: uppercase;">Faltan</span> <br/>
                         </a>
                     </li>
                 </ul>
@@ -91,13 +91,13 @@ and open the template in the editor.
                 </ul>
                 <ul class="pager" id="cert">
                         <li><p class="quest">Voce tem certeza?</p></li>
-                	<li><a href="javascript:void();" id="yes">Sim</a></li>
-                	<li><a href="javascript:void();" id="not">Não</a></li>
+                	<li><a href="javascript:void();" id="yes">Sí</a></li>
+                	<li><a href="javascript:void();" id="not">No</a></li>
                 </ul> <br/><br/>
                 <ul class="pager" id="neg">
                   <li>
                       <a href="javascript:void();" id="stop">
-                          <span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;Parar
+                          <span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;Deténgase
                       </a>
                   </li> 
                 </ul>
@@ -107,28 +107,28 @@ and open the template in the editor.
         <!-- Area da Ajuda -->
         
         <aside id="help-right" class="jumbotron">
-            <h2> Ajuda </h2>
+            <h2> Ayuda </h2>
             
             <nav>
                 <ul class="pager well">
-                    <li data-toggle="tooltip" title="Pular" data-placement="left">
+                    <li data-toggle="tooltip" title="Saltar" data-placement="left">
                         <button class="jump btn btn-default" id="jump-one">
                             <span class="glyphicon glyphicon-share-alt jumper-I"></span>
                         </button>
                     </li> <br><br>
-                    <li data-toggle="tooltip" title="Pular" data-placement="left">
+                    <li data-toggle="tooltip" title="Saltar" data-placement="left">
                         <button class="jump btn btn-default" id="jump-two">
                             <span class="glyphicon glyphicon-share-alt jumper-II"></span>
                         </button>
                     </li> <br><br>
-                    <li data-toggle="tooltip" title="Pular" data-placement="left">
+                    <li data-toggle="tooltip" title="Saltar" data-placement="left">
                         <button class="jump btn btn-default" id="jump-three">
                             <span class="glyphicon glyphicon-share-alt jumper-III"></span>
                         </button>
                     </li> <br><br>
                 </ul>
                 <ul class="pager well">
-                    <li data-toggle="tooltip" title="Ver Dica" data-placement="left">
+                    <li data-toggle="tooltip" title="Ver Sugerencia" data-placement="left">
                         <button class="help btn btn-default">
                             <span class="glyphicon glyphicon-eye-open see"></span>
                         </button>
