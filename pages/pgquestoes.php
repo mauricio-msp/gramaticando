@@ -38,10 +38,16 @@ and open the template in the editor.
     </head>
     <body>
         
+        <div id="mask-invible"></div>
+        
         <!-- Cabeçalho da Pergunta -->
         <header id="question" class="jumbotron">
             <p>pergunta vem aqui?</p>
         </header>
+        
+        <div id="time">
+            <p>30s</p>
+        </div>
         
         <!-- Area das estatísticas -->
         <aside id="static-left" class="jumbotron">
@@ -51,9 +57,9 @@ and open the template in the editor.
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
                         <a href="#"> 
-                            <p>Prêmio pts <span id="premio">0</span> </p>
-                            <p>Parar  pts <span id="parar">0</span> </p>
-                            <p>Perde  pts <span id="perde">0</span> </p>
+                            <p>Dinheiro R$ <span id="premio">0</span> </p>
+                            <p>Pontuação <span id="parar">0 pts</span> </p>
+                            <p>Parar <span id="perde">0 pts</span> </p>
                         </a>
                     </li>
                     <li class="well">
@@ -84,20 +90,21 @@ and open the template in the editor.
                   <li><a href="javascript:void();" rel="item4" class="alter">Previous</a></li> <br/><br/>
                 </ul>
                 <ul class="pager" id="cert">
-                	<li>Voce tem certeza?</li><br>
+                        <li><p class="quest">Voce tem certeza?</p></li>
                 	<li><a href="javascript:void();" id="yes">Sim</a></li>
                 	<li><a href="javascript:void();" id="not">Não</a></li>
-                </ul>
+                </ul> <br/><br/>
                 <ul class="pager" id="neg">
-                  <li><a href="javascript:void();" id="stop">Parar</a></li> 
-                  <li id="desblock"><a href="javascript:void();">Ajuda</a></li>
+                  <li>
+                      <a href="javascript:void();" id="stop">
+                          <span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;Parar
+                      </a>
+                  </li> 
                 </ul>
             </nav>
         </section>
         
         <!-- Area da Ajuda -->
-        
-        <div id="block"></div>
         
         <aside id="help-right" class="jumbotron">
             <h2> Ajuda </h2>
@@ -105,25 +112,25 @@ and open the template in the editor.
             <nav>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <button class="jump btn btn-default">
-                            <span class="glyphicon glyphicon-share-alt"></span>
+                        <button class="jump btn btn-default" id="jump-one">
+                            <span class="glyphicon glyphicon-share-alt jumper-I"></span>
                         </button>
                     </li> <br><br>
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <button class="jump btn btn-default">
-                            <span class="glyphicon glyphicon-share-alt"></span>
+                        <button class="jump btn btn-default" id="jump-two">
+                            <span class="glyphicon glyphicon-share-alt jumper-II"></span>
                         </button>
                     </li> <br><br>
                     <li data-toggle="tooltip" title="Pular" data-placement="left">
-                        <button class="jump btn btn-default">
-                            <span class="glyphicon glyphicon-share-alt"></span>
+                        <button class="jump btn btn-default" id="jump-three">
+                            <span class="glyphicon glyphicon-share-alt jumper-III"></span>
                         </button>
                     </li> <br><br>
                 </ul>
                 <ul class="pager well">
-                    <li data-toggle="tooltip" title="Pedir Ajuda" data-placement="left">
+                    <li data-toggle="tooltip" title="Ver Dica" data-placement="left">
                         <button class="help btn btn-default">
-                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="glyphicon glyphicon-eye-open see"></span>
                         </button>
                     </li>
                 </ul>
@@ -141,11 +148,11 @@ and open the template in the editor.
                 </ul>
             </nav>
         </aside>
-       
-        <!-- Rodapé com tempo -->
-        <footer id="temp" class="jumbotron">
-            <p>O tempo para as questões vem aqui</p>
+        
+        <footer id="dica" class="jumbotron">
+            <p style="text-align: center;">Dica</p>
         </footer>
+       
         <!-- ########## SCRIPTS ####33333 -->
           <script type="text/javascript">
               jQuery(function (){
@@ -155,9 +162,35 @@ and open the template in the editor.
                       $(this).tooltip('destroy');
                   });
                   
-                  $('#desblock').click(function(){
-                    $('#block').hide();
+                  $('.help').click(function(){
+                    $('span.see').removeClass('glyphicon glyphicon-eye-open').addClass('glyphicon glyphicon-eye-close');
+                    
+                    $('footer#dica').slideDown();
+                    // Mask Active
+                        $('div#mask-invible').show();
+                        //Hide Mask
+                            $('div#mask-invible').click(function(){
+                               $(this).hide(); 
+                                $('footer#dica').slideUp();
+                            });
+                    
+                    //Ocultar 
+                        $('footer#dica').click(function(){
+                           $(this).slideUp(); 
+                        });
                   });
+                 
+                 $('#jump-one').click(function(){
+                    $('span.jumper-I').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
+                 });
+                 
+                  $('#jump-two').click(function(){
+                    $('span.jumper-II').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
+                 });
+                 
+                  $('#jump-three').click(function(){
+                    $('span.jumper-III').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
+                 });
                });
           </script>
     </body>
