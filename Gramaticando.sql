@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Nov-2015 às 22:11
+-- Generation Time: 21-Nov-2015 às 15:56
 -- Versão do servidor: 5.6.15-log
 -- PHP Version: 5.5.8
 
@@ -36,6 +36,10 @@ CREATE TABLE IF NOT EXISTS `itens` (
   `item3` varchar(255) NOT NULL,
   `item4` varchar(255) NOT NULL,
   `id_quest` int(11) NOT NULL,
+  `err1` varchar(255) NOT NULL,
+  `err2` varchar(255) NOT NULL,
+  `err3` varchar(255) NOT NULL,
+  `err4` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
