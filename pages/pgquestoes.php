@@ -35,6 +35,10 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/questoes.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/time.js"></script>
+        <script>
+        	startCountdown();
+        </script>
     </head>
     <body>
         
@@ -46,7 +50,7 @@ and open the template in the editor.
         </header>
         
         <div id="time">
-            <p>30s</p>
+            <p id="timerest">30s</p>
         </div>
         
         <!-- Area das estatísticas -->
