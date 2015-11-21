@@ -5,7 +5,7 @@ var tempo = new Number();
 	 
 	function startCountdown(){
 	 
-	    if((tempo - 1) >= 0){
+	    if((tempo - 0) >= 0){
 	        var seg = tempo%60;
 	 
 	        if(seg <=9){
