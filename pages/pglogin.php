@@ -66,20 +66,34 @@ and open the template in the editor.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">2</span>
-                      A cada acerto o jogador dobra sua pontuação atual <br/> &nbsp;&nbsp;&nbsp;
-                      EX: Se você estiver com 16 pts, seus pts irão para 32 pts.
+                      A cada acerto o jogador ganha 10pts
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">3</span>
-                      O jogador tem direito a 3 pulos e consultar os "amigos".
+                      A cada 10 pts que o jogador ganha, ele ganha a metade em dinheiro <br/> &nbsp;&nbsp;&nbsp;
+                      EX: 30pts equivale à R$ 15,00.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">4</span>
-                      Em caso de resposta errada, o jogador ganha o equivalente a quarta parta de pts.
+                      A função do dinheiro ganho ao longo do jogo é para comprar novas dicas, a <br/>
+                      medida que você gasta, e também poderá comprar pulos.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">5</span>
+                      As dicas valem 200 pts ou R$ 100,00 e os pulos 100 pts  ou R$ 50,00. <br/>
+                      Caso você complete os 200 pts ou 100 pts, aparecerá a opção de comprar.
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">6</span>
+                      O jogador tem direito a 3 pulos e consultar uma dica.
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">7</span>
                       Se você preferir parar, você ganha a metade do seus pts.
+                  </p> <br/>
+                  <p>
+                      <span class="badge" style="background-color: #0275D8">8</span>
+                      Em caso de resposta errada, o jogador ganha o equivalente a quarta parta de pts.
                   </p> <br/>
                 </div>
               </div><!-- /.modal-content -->
