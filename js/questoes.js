@@ -27,10 +27,14 @@ jQuery(document).ready(function() {
 	$('#not').click(function(){
 		$('#neg').slideDown();
 		$('#cert').slideUp();
+		if(stoptime === true){
+			stoptime = false;
+			startCountdown();
+		}
 	});
 	
 	$('#yes').click(function(){
-		
+		stoptime = true;
 	});
 	
 	$('.jump').click(function(){
@@ -44,5 +48,14 @@ jQuery(document).ready(function() {
 		$(this).tooltip('destroy');
 	});
 	
+	$.ajax({
+		url: 'functions/funcquest.php',
+		beforeSend: function(){
+			
+		},
+		success: function(data){
+			
+		}
+	});
 	
 });

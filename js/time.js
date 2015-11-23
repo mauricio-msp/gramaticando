@@ -2,9 +2,9 @@
 
 var tempo = new Number();
 	tempo = 30;
+	var stoptime = false;
 	 
 	function startCountdown(){
-	 
 	    if((tempo - 0) >= 0){
 	        var seg = tempo%60;
 	 
@@ -15,10 +15,11 @@ var tempo = new Number();
 	        horaImprimivel = seg+"s";
 	        $("#timerest").html(horaImprimivel);
 	 
-	        setTimeout('startCountdown()',1000);
-	 
-	        tempo--;
-	 
+	        if(stoptime === false){
+				setTimeout('startCountdown()',1000);
+				tempo--;
+			}
+	 	 
 	    } else {
 	        
 	    }
