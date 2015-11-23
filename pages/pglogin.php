@@ -23,7 +23,7 @@ and open the template in the editor.
             <form method="post" action="" id="form" name="form">
                 <div class="form-group">
                     <label for="exampleInputNome">Escriba su nombre para jugar</label>
-                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nombre o Apellido" required>
+                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nombre o Apellido" required pattern="[A-z\s]+$">
                  </div> <br/>
                 
                  <nav id="menu">
@@ -107,8 +107,8 @@ and open the template in the editor.
                                $(this).hide();
                                //Modal
                                $('#win-modal').modal('destroy');
-                            });
-                });
+                            }); 
+                });            
             </script>
     </body> 
 </html>
