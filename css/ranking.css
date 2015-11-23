@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    background-color: #0275D8;
+}
+
+section#ranking {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #FFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: visible;
+}
+
+
+
+

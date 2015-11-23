@@ -39,7 +39,7 @@ and open the template in the editor.
                                 </a>
                             </li>
                             <li data-toggle="tooltip" title="Clasificación" data-placement="right">
-                                <a href="javascript:void();">
+                                <a href="ranking">
                                     <span class="glyphicon glyphicon-indent-right"></span>
                                 </a>
                             </li>

@@ -12,16 +12,55 @@ and open the template in the editor.
         <meta name="description" content="Zona Comics - Download de Séries ">
         <meta name="keywords" content="downloads e notícias">
         <!--CSS Bootstrap 3.3.5 -->
-       
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/ranking.css" />
         <!--JS Bootstrap 3.3.5 -->
-      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	
+	<script src="js/bootstrap.js"></script>
         <title>Ranking</title>
     </head>
     <body>
         
-      
+        <section id="ranking">
+            <table class="table table-responsive table-striped" id="table-order">
+                <thead>
+                    <tr>
+                        <th class="text-center">Posº</th>
+                        <th class="text-center">Nome</th>
+                        <th class="text-center">Pontução</th>
+                        <th class="text-center">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">Novinha</td>
+                        <td class="text-center">230</td>
+                        <td class="text-center">Xeda</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">Novinha</td>
+                        <td class="text-center">230</td>
+                        <td class="text-center">Xeda</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">Novinha</td>
+                        <td class="text-center">230</td>
+                        <td class="text-center">Xeda</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-center text-primary" style="font-size: 13pt;">
+                            <span class="glyphicon glyphicon-copyright-mark"></span>
+                            <span>Copyright - <?php echo date('Y'); ?></span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
     </body>
 </html>
 
