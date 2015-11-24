@@ -16,15 +16,15 @@ var tempo = new Number();
 	        $("#timerest").html(horaImprimivel);
 	 
 	        if(stoptime === false){
-				setTimeout('startCountdown()',1000);
-				tempo--;
-			}
+                    setTimeout('startCountdown()',1000);
+                    tempo--;
+                }
 	 	 
 	    } else {
-			$('.modal-body').html('Tempo esgotado');
-			stoptime = true;
+                $('.modal-body').html('Tempo esgotado');
+                stoptime = true;
 	        questao(Math.floor((Math.random() * 14) + 1));
-			$('#win-modal').modal('show');
+                $('#win-modal').modal('show');
 	    }
 	 
 	}

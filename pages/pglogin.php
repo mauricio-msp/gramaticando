@@ -76,12 +76,12 @@ and open the template in the editor.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">4</span>
-                      La función del dinero ganado a través del juego es comprar nuevos consejos, a <br/>
+                      La función del dinero ganado a través del juego es comprar nuevos consejos, a
                       medida que pasan, y también se puede comprar saltos.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">5</span>
-                      Los consejos que valen 200 puntos o R$ 100,00 y los saltos 100 pts o R$ 50,00. <br/>
+                      Los consejos que valen 200 puntos o R$ 100,00 y los saltos 100 pts o R$ 50,00.
                       Si completa los 200 puntos y 100 puntos, aparece la opción de compra.
                   </p> <br/>
                   <p>

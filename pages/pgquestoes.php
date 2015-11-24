@@ -169,7 +169,7 @@ and open the template in the editor.
         </aside>
         
         <footer id="dica" class="jumbotron">
-            <p style="text-align: center;" id="textdica">Dica</p>
+            <p style="text-align: center;" id="textdica"></p>
         </footer>
         
         <!-- Janela Modal -->
@@ -189,7 +189,7 @@ and open the template in the editor.
               </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-       
+        
         <!-- ########## SCRIPTS ####33333 -->
           <script type="text/javascript">
               jQuery(function (){
@@ -232,10 +232,10 @@ and open the template in the editor.
                  //Modal 
                  $('#win-modal').modal('show');
 				 
-				 $('.fechar').click(function(){
-					 stoptime = false;
-		         	 startCountdown();
-				 });
+                    $('.fechar').click(function(){
+                        stoptime = false;
+                        startCountdown();
+                    });
 				 
                });
           </script>
