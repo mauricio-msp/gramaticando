@@ -14,6 +14,8 @@
 			die();
 		endif;
 		
+		$_SESSION['rand'] = '';
+		
 	?>
 </div>
 <!DOCTYPE html>
@@ -40,23 +42,14 @@ and open the template in the editor.
         <script>
         	startCountdown();
 			$(document).ready(function() {
-                questao(<?php echo rand(1 ,3); ?>);
-				
-				$('.jump').click(function(){
-					questao(<?php echo rand(1 ,3); ?>);
-					$(this).attr('disabled', 'disabled');
-					$(this).tooltip('destroy');
+                $.ajax({
+					type: 'POST',
+					data: {id : id},
+					url:  'functions/norand.php',
+					success: function(data){
+						questao(data);
+					}
 				});
-				
-				$('#yes').click(function(){
-					var rel = $(this).attr('rel').valueOf();
-					stoptime = true;
-					questao(<?php echo rand(1 ,3); ?>);
-					$('#neg').slideDown();
-					$('#cert').slideUp();
-					veralt(rel);
-				});
-				
             });
         </script>
     </head>
