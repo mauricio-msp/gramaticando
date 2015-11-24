@@ -52,12 +52,13 @@ function questao(id){
 				stoptime = false;
 				startCountdown();
 			}
+			$('#yes').attr('alt', id);
 		}
 		
 	});
 }
 
-function veralt(iten){
+function veralt(iten, id){
 	if(iten === 'item1'){
 		iten = 1;
 	}else if(iten === 'item2'){
@@ -69,10 +70,10 @@ function veralt(iten){
 	}
 	$.ajax({
 		type: 'POST',
-		data: {iten: iten},
+		data: {iten : iten, id : id},
 		url:  'functions/veralt.php',
-		success: function(){
-			
+		success: function(data){
+			alert(data);
 		}
 	});
 }

@@ -21,7 +21,9 @@ var tempo = new Number();
 			}
 	 	 
 	    } else {
-	        
+			alert('Tempo esgotado');
+			stoptime = true;
+	        questao(Math.floor((Math.random() * 14) + 1));
 	    }
 	 
 	}
