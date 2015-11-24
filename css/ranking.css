@@ -5,6 +5,8 @@
 
 html,body {
     background-color: #0275D8;
+    background-image: url('../imagens/bg-ranking.png');
+    background-repeat: no-repeat;
 }
 
 nav#back {
