@@ -58,43 +58,43 @@ and open the template in the editor.
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   	<span aria-hidden="true">&times;</span>
                   </button>
-                  <h4 class="modal-title">Regras Gerais</h4>
+                  <h4 class="modal-title">Reglas Generales</h4>
                 </div>
                 <div class="modal-body">
                   <p>
                       <span class="badge" style="background-color: #0275D8">1</span>
-                      Cada pergunta terá um tempo máximo estipulado para as respostas, que é de 30 segundos
+                      Cada pregunta tendrá un tiempo máximo asignado para las respuestas, que es de 30 segundos.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">2</span>
-                      A cada acerto o jogador ganha 10pts
+                      Cada golpe que el jugador gana 10 puntos.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">3</span>
-                      A cada 10 pts que o jogador ganha, ele ganha a metade em dinheiro <br/> &nbsp;&nbsp;&nbsp;
-                      EX: 30pts equivale à R$ 15,00.
+                      Cada 10 puntos el jugador gana, gana la mitad en efectivo <br/> &nbsp;&nbsp;&nbsp;
+                      EX: 30 puntos equivalentes a R$ 15,00.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">4</span>
-                      A função do dinheiro ganho ao longo do jogo é para comprar novas dicas, a <br/>
-                      medida que você gasta, e também poderá comprar pulos.
+                      La función del dinero ganado a través del juego es comprar nuevos consejos, a <br/>
+                      medida que pasan, y también se puede comprar saltos.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">5</span>
-                      As dicas valem 200 pts ou R$ 100,00 e os pulos 100 pts  ou R$ 50,00. <br/>
-                      Caso você complete os 200 pts ou 100 pts, aparecerá a opção de comprar.
+                      Los consejos que valen 200 puntos o R$ 100,00 y los saltos 100 pts o R$ 50,00. <br/>
+                      Si completa los 200 puntos y 100 puntos, aparece la opción de compra.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">6</span>
-                      O jogador tem direito a 3 pulos e consultar uma dica.
+                      El jugador tiene derecho a 3 saltos y consulte a un consejo.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">7</span>
-                      Se você preferir parar, você ganha a metade do seus pts.
+                      Si prefiere parar, usted gana la mitad de sus puntos.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">8</span>
-                      Em caso de resposta errada, o jogador ganha o equivalente a quarta parta de pts.
+                      En caso de respuesta incorrecta, el jugador gana el equivalente a la cuarta salida de pts.
                   </p> <br/>
                 </div>
               </div><!-- /.modal-content -->

@@ -60,10 +60,10 @@ and open the template in the editor.
                 <tfoot>
                     <tr>
                         <td colspan="4" class="text-center text-primary" style="font-size: 13pt;">
-                            <span> Copyright 
+                            <span> Derechos de autor
                                 <span class="glyphicon glyphicon-copyright-mark" style="font-size: 11pt;"></span> 
                                 <?php echo date('Y'); ?>
-                                - Todos os direitos resevados.
+                                - Todos los derechos reservados..
                             </span>
                         </td>
                     </tr>
