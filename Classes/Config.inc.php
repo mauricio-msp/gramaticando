@@ -3,7 +3,7 @@
 /** @var string */ 
 $host = is_string($_SERVER["HTTP_HOST"]) ? $_SERVER["HTTP_HOST"] : "" ; 
 
-define('RAIZ', "http://{$host}/gramaticando/");
+define('RAIZ', "http://{$host}/Gramaticando/");
 
 // AUTO LOAD DE CLASSES ########################################################
 function __autoload($Class) {

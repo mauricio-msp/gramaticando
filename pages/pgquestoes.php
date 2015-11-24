@@ -159,7 +159,7 @@ and open the template in the editor.
                         </button>
                     </li>
                 </ul>
-                <ul class="pager well" style="z-index: 999">
+                <ul class="pager well">
                     <li data-toggle="tooltip" title="Informações" data-placement="left">
                         <a href="#"> 
                             <span class="glyphicon glyphicon-info-sign"></span>

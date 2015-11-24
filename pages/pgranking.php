@@ -21,14 +21,20 @@ and open the template in the editor.
     </head>
     <body>
         
+        <nav id="back">
+            <ul class="pager">
+              <li class="previous"><a href='<?php echo RAIZ; ?>'><span aria-hidden="true">&larr;</span> Volver </a></li>
+            </ul>
+        </nav>
+        
         <section id="ranking">
             <table class="table table-responsive table-striped" id="table-order">
                 <thead>
                     <tr>
                         <th class="text-center">Posº</th>
-                        <th class="text-center">Nome</th>
-                        <th class="text-center">Pontução</th>
-                        <th class="text-center">Status</th>
+                        <th class="text-center">Nombre</th>
+                        <th class="text-center">Puntuacion</th>
+                        <th class="text-center">Estado</th>
                     </tr>
                 </thead>
                 <tbody>
