@@ -48,14 +48,4 @@ jQuery(document).ready(function() {
 		$(this).tooltip('destroy');
 	});
 	
-	$.ajax({
-		url: 'functions/funcquest.php',
-		beforeSend: function(){
-			
-		},
-		success: function(data){
-			
-		}
-	});
-	
 });

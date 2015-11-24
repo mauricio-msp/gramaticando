@@ -36,8 +36,12 @@ and open the template in the editor.
         <script src="js/questoes.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/time.js"></script>
+        <script src="js/ajax.js"></script>
         <script>
         	startCountdown();
+			$(document).ready(function() {
+                questao(<?php echo rand(1,3); ?>);
+            });
         </script>
     </head>
     <body>
@@ -46,7 +50,7 @@ and open the template in the editor.
         
         <!-- Cabeçalho da Pergunta -->
         <header id="question" class="jumbotron">
-            <p>pergunta vem aqui?</p>
+            <p id="quest">pergunta vem aqui?</p>
         </header>
         
         <div id="time">
@@ -88,10 +92,10 @@ and open the template in the editor.
         <section id="itens">
             <nav id="alernativas">
                 <ul class="pager">
-                  <li><a href="javascript:void();" rel="item1" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item2" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item3" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item4" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item1" id="item1" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item2" id="item2" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item3" id="item3" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item4" id="item4" class="alter">Previous</a></li> <br/><br/>
                 </ul>
                 <ul class="pager" id="cert">
                         <li><p class="quest">Voce tem certeza?</p></li>
@@ -154,7 +158,7 @@ and open the template in the editor.
         </aside>
         
         <footer id="dica" class="jumbotron">
-            <p style="text-align: center;">Dica</p>
+            <p style="text-align: center;" id="textdica">Dica</p>
         </footer>
        
         <!-- ########## SCRIPTS ####33333 -->
