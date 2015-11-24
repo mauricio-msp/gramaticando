@@ -40,7 +40,6 @@ and open the template in the editor.
         <script src="js/time.js"></script>
         <script src="js/ajax.js"></script>
         <script>
-        	startCountdown();
 			$(document).ready(function() {
 				id = Math.floor((Math.random() * 14) + 1);
                 $.ajax({
@@ -179,7 +178,7 @@ and open the template in the editor.
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close fechar" data-dismiss="modal" aria-label="Close">
                   	<span aria-hidden="true">&times;</span>
                   </button>
                   <h4 class="modal-title"> Sobre </h4>
@@ -232,6 +231,12 @@ and open the template in the editor.
                  
                  //Modal 
                  $('#win-modal').modal('show');
+				 
+				 $('.fechar').click(function(){
+					 stoptime = false;
+		         	 startCountdown();
+				 });
+				 
                });
           </script>
     </body>

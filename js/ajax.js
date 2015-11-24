@@ -48,10 +48,7 @@ function questao(id){
 		success: function(data){
 			$('#textdica').html(data);
 			tempo = 30;
-			if(stoptime === true){
-				stoptime = false;
-				startCountdown();
-			}
+			$("#timerest").html('30s');
 			$('#yes').attr('alt', id);
 		}
 		
@@ -73,7 +70,9 @@ function veralt(iten, id){
 		data: {iten : iten, id : id},
 		url:  'functions/veralt.php',
 		success: function(data){
-			alert(data);
+			$('.modal-body').html(data);
+			stoptime = true;
+			$('#win-modal').modal('show');
 		}
 	});
 }
