@@ -62,8 +62,8 @@ and open the template in the editor.
                         <td colspan="4" class="text-center text-primary" style="font-size: 13pt;">
                             <span> Copyright 
                                 <span class="glyphicon glyphicon-copyright-mark" style="font-size: 11pt;"></span> 
-                                 <?php echo date('Y'); ?>
-                                GP4 - Todos os direitos resevados.
+                                <?php echo date('Y'); ?>
+                                - Todos os direitos resevados.
                             </span>
                         </td>
                     </tr>
