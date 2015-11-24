@@ -41,5 +41,13 @@ function questao(id){
 			$('#item4').html(data);
 		}
 	});
+	$.ajax({
+		type: 'POST',
+		data: {id: id},
+		url:  "functions/getDica.php",
+		success: function(data){
+			$('#textdica').html(data);
+		}
+	});
 	
 }
