@@ -20,6 +20,7 @@ and open the template in the editor.
     </head>
     <body>
         <section id="areaForm" class="jumbotron">
+            <h2 class="h2">GRAMATICANDO</h2>
             <form method="post" action="" id="form" name="form">
                 <div class="form-group">
                     <label for="exampleInputNome">Escriba su nombre para jugar</label>

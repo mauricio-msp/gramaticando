@@ -5,10 +5,14 @@
 }
 
 html,body {
-    background-color: #0275D8;
-    background-image: url('../imagens/gramaticando-normal.png');
-    background-repeat: no-repeat;
+    background-color:#0275D8;
     font-family: 'Square721 BT', sans-serif;
+}
+
+section#areaForm h2 {
+    color: #FFF;
+    position: absolute;
+    top: -18%;
 }
 
 section#areaForm {
@@ -20,6 +24,7 @@ section#areaForm {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px; 
+    box-shadow: 0 8px 5px rgba(0,0,0,.4);
 }
 
 form#form {
