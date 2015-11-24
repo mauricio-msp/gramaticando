@@ -121,6 +121,10 @@ span {
     color: #FFF;
 }
 
+p#quest {
+    font-size: 12pt;
+}
+
 section#itens {
     position: absolute;
     display: block;
@@ -131,7 +135,7 @@ section#itens {
 }
 
 section#itens nav#alernativas ul li a.alter{
-    width: 50%;
+    width: 70%;
     border: none;
 }
 
