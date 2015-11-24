@@ -112,17 +112,10 @@ and open the template in the editor.
                     
                         // Mascara e Window Modal 
                         $('#reg').click(function(){
-                            $('#mascara').show();
                             // Modal 
                             $('#win-modal').modal('show');
                         });
-                        
-                            //Ocultar Mascara e Window Modal
-                            $('#mascara').click(function(){
-                               $(this).hide();
-                               //Modal
-                               $('#win-modal').modal('destroy');
-                            }); 
+                         
                 });            
             </script>
     </body> 

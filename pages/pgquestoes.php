@@ -172,6 +172,24 @@ and open the template in the editor.
         <footer id="dica" class="jumbotron">
             <p style="text-align: center;" id="textdica">Dica</p>
         </footer>
+        
+        <!-- Janela Modal -->
+        
+        <div class="modal fade" id="win-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  	<span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title"> Sobre </h4>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
        
         <!-- ########## SCRIPTS ####33333 -->
           <script type="text/javascript">
@@ -211,6 +229,9 @@ and open the template in the editor.
                   $('#jump-three').click(function(){
                     $('span.jumper-III').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
                  });
+                 
+                 //Modal 
+                 $('#win-modal').modal('show');
                });
           </script>
     </body>

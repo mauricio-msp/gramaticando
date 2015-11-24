@@ -125,6 +125,11 @@ p#quest {
     font-size: 12pt;
 }
 
+p#textdica {
+    color: #204d74;
+    margin-top: -5px;
+}
+
 section#itens {
     position: absolute;
     display: block;
