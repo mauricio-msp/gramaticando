@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
 	
 	$('.alter').click(function(){
 		var rel = $(this).attr('rel').valueOf();
+		$('#yes').attr('rel', rel);
 		$('#neg').slideUp();
 		$('#cert').slideDown();
 	});
@@ -31,16 +32,6 @@ jQuery(document).ready(function() {
 			stoptime = false;
 			startCountdown();
 		}
-	});
-	
-	$('#yes').click(function(){
-		stoptime = true;
-	});
-	
-	$('.jump').click(function(){
-		
-		$(this).attr('disabled', 'disabled');
-		$(this).tooltip('destroy');
 	});
 	
 	$('.help').click(function(){
