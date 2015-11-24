@@ -50,12 +50,13 @@ and open the template in the editor.
         
         <!-- Cabeçalho da Pergunta -->
         <header id="question" class="jumbotron">
+            <br/>
             <p id="quest">pergunta vem aqui?</p>
         </header>
         
         <div id="time">
             <p id="timerest">30s</p>
-        </div>
+        </div> 
         
         <!-- Area das estatísticas -->
         <aside id="static-left" class="jumbotron">
@@ -101,7 +102,7 @@ and open the template in the editor.
                         <li><p class="quest">Voce tem certeza?</p></li>
                 	<li><a href="javascript:void();" id="yes">Sí</a></li>
                 	<li><a href="javascript:void();" id="not">No</a></li>
-                </ul> <br/><br/>
+                </ul> <br/>
                 <ul class="pager" id="neg">
                   <li>
                       <a href="javascript:void();" id="stop">
