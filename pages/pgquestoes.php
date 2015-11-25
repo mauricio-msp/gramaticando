@@ -61,7 +61,7 @@ and open the template in the editor.
         <!-- Cabeçalho da Pergunta -->
         <header id="question" class="jumbotron">
             <br/>
-            <p id="quest"></p>
+            <p id="quest" class="text-center"></p>
         </header>
         
         <div id="time">
