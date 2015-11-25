@@ -52,8 +52,20 @@ and open the template in the editor.
                     });
             });
         </script>
+        
+        <!-- Impedir Atualização
+        <script>
+            function Verificar(){
+                var button = window.event.keyCode;
+                if (button === 116) {
+                    alert("ERROR! : Proibido atualizar página"); 
+                    event.keyCode = 0;
+                    event.returnValue=false;
+                }
+            }
+        </script>
     </head>
-    <body>
+    <body onKeyDown="Verificar();">
         
         <div id="mask-invible"></div>
         
@@ -108,7 +120,7 @@ and open the template in the editor.
                   <li><a href="javascript:void();" rel="item4" id="item4" class="alter">Previous</a></li> <br/><br/>
                 </ul>
                 <ul class="pager" id="cert">
-                        <li><p class="quest">Voce tem certeza?</p></li>
+                        <li><p class="quest">¿Estás seguro?</p></li>
                 	<li><a href="javascript:void();" id="yes">Sí</a></li>
                 	<li><a href="javascript:void();" id="not">No</a></li>
                 </ul> <br/>
