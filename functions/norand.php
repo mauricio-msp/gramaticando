@@ -11,7 +11,7 @@ function ver($id){
 	if(isset($_SESSION['rand'][0])):
 		foreach($_SESSION['rand'] as $rand):
 			if($rand == $id):
-				$id = rand(1, 14);
+				$id = rand(1, 20);
 				$cont++;
 			endif;
 		endforeach;

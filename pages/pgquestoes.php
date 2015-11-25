@@ -40,17 +40,16 @@ and open the template in the editor.
         <script src="js/time.js"></script>
         <script src="js/ajax.js"></script>
         <script>
-			$(document).ready(function() {
-				id = Math.floor((Math.random() * 14) + 1);
-                $.ajax({
-					type: 'POST',
-					data: {id : id},
-					url:  'functions/norand.php',
-					success: function(data){
-						
-						questao(data);
-					}
-				});
+            $(document).ready(function() {
+                id = Math.floor((Math.random() * 20) + 1);
+                    $.ajax({
+                        type: 'POST',
+                        data: {id : id},
+                        url:  'functions/norand.php',
+                        success: function(data){
+                            questao(data);
+                        }
+                    });
             });
         </script>
     </head>
