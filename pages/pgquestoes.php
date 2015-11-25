@@ -236,6 +236,11 @@ and open the template in the editor.
                         stoptime = false;
                         startCountdown();
                     });
+					
+					$('#win-modal').click(function(){
+						stoptime = false;
+                        startCountdown();
+					});
 				 
                });
           </script>

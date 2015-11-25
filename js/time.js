@@ -21,10 +21,10 @@ var tempo = new Number();
                 }
 	 	 
 	    } else {
-                $('.modal-body').html('Tempo esgotado');
-                stoptime = true;
+			$('.modal-body').html('Tempo esgotado');
+			stoptime = true;
+			$('#win-modal').modal('show');
 	        questao(Math.floor((Math.random() * 14) + 1));
-                $('#win-modal').modal('show');
 	    }
 	 
 	}

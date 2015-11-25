@@ -7,7 +7,7 @@
 	
 	
 	if($quest->itemcorect == $item):
-		echo 'Item correto';
+		echo 1;
 	else:
 		$itens = Itens::find("all", array("conditions"=>array("id_quest = ?", $_POST['id'])));
 		$itens = $itens[0];

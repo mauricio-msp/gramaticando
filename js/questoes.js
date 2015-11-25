@@ -3,6 +3,8 @@
 jQuery(document).ready(function() {
 	$('#cert').hide();
 	
+	var loading = '<img src="imagens/ajax-loader (1).gif" alt="">';
+	
 	$('#stop').click(function(){
 		$.ajax({
 			url: 'functions/funcParar.php',
@@ -32,6 +34,8 @@ jQuery(document).ready(function() {
 	});
 	
 	$('#yes').click(function(){
+		$('.modal-body').html(loading);
+		$('#win-modal').modal('show');
 		var rel = $(this).attr('rel').valueOf();
 		var alt = $(this).attr('alt').valueOf();
 		stoptime = true;
