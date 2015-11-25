@@ -181,10 +181,10 @@ and open the template in the editor.
                   <button type="button" class="close fechar" data-dismiss="modal" aria-label="Close">
                   	<span aria-hidden="true">&times;</span>
                   </button>
-                  <h4 class="modal-title"> Sobre </h4>
+                  <h4 class="modal-title"> Cargando... </h4>
                 </div>
                 <div class="modal-body">
-                  
+                    
                 </div>
               </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
@@ -237,10 +237,10 @@ and open the template in the editor.
                         startCountdown();
                     });
 					
-					$('#win-modal').click(function(){
-						stoptime = false;
+                    $('#win-modal').click(function(){
+                        stoptime = false;
                         startCountdown();
-					});
+                    });
 				 
                });
           </script>

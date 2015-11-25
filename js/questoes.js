@@ -3,7 +3,7 @@
 jQuery(document).ready(function() {
 	$('#cert').hide();
 	
-	var loading = '<img src="imagens/ajax-loader (1).gif" alt="">';
+	var loading = '<img src="imagens/ajax-loader (1).gif" alt="" class="center-block">';
 	
 	$('#stop').click(function(){
 		$.ajax({
