@@ -72,7 +72,7 @@ and open the template in the editor.
                   <p>
                       <span class="badge" style="background-color: #0275D8">3</span>
                       Cada 10 puntos el jugador gana, gana la mitad en efectivo <br/> &nbsp;&nbsp;&nbsp;
-                      EX: 30 puntos equivalentes a R$ 15,00.
+                      <kbd>EX:</kbd> 30 puntos equivalentes a R$ 15,00.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">4</span>
