@@ -68,7 +68,6 @@ and open the template in the editor.
         </script>
     </head>
     <body onKeyDown="Verificar();">
-        
         <div id="mask-invible"></div>
         
         <!-- Cabeçalho da Pergunta -->

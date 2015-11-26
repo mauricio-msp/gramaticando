@@ -3,7 +3,7 @@
 var tempo = new Number();
 	tempo = 30;
 	var stoptime = false;
-	 
+      
 	function startCountdown(){
 	    if((tempo - 0) >= 0){
 	        var seg = tempo%60;
