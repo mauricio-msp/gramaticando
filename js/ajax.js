@@ -70,14 +70,9 @@ function veralt(iten, id){
 		data: {iten : iten, id : id},
 		url:  'functions/veralt.php',
 		success: function(data){
-			if(data != 1){
-				$('.modal-body').html(data);
-				$('#win-modal').modal('show');
-			}else{
-				$('#win-modal').modal('hide');
-				stoptime = false;
-				startCountdown();
-			}
+			$('#win-modal').modal('hide');
+			stoptime = false;
+			startCountdown();
 		}
 	});
 }

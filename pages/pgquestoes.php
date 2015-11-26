@@ -14,7 +14,9 @@
 			die();
 		endif;
 		
+		unset($_SESSION['rand']);
 		$_SESSION['rand'] = '';
+		$_SESSION['qrand'] = 0;
 		
 	?>
 </div>
@@ -34,7 +36,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/questoes.css" />
         <!--JS Bootstrap 3.3.5 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/questoes.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/time.js"></script>
@@ -242,13 +244,9 @@ and open the template in the editor.
                  
                  //Modal 
                  $('#win-modal').modal('show');
-				 
-                    $('.fechar').click(function(){
-                        stoptime = false;
-                        startCountdown();
-                    });
-					
+				 					
                     $('#win-modal').click(function(){
+						$('#win-modal').modal('hide');
                         stoptime = false;
                         startCountdown();
                     });

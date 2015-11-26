@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 	});
 	
 	$('.jump').click(function(){
-		questao(Math.floor((Math.random() * 14) + 1));
+		questao(Math.floor((Math.random() * 20) + 1));
 		$(this).attr('disabled', 'disabled');
 		$(this).tooltip('destroy');
 	});
@@ -34,12 +34,14 @@ jQuery(document).ready(function() {
 	});
 	
 	$('#yes').click(function(){
+		$('.modal-title').html('Cargando');
 		$('.modal-body').html(loading);
+		$('footer#dica').slideUp();
 		$('#win-modal').modal('show');
 		var rel = $(this).attr('rel').valueOf();
 		var alt = $(this).attr('alt').valueOf();
 		stoptime = true;
-		questao(Math.floor((Math.random() * 14) + 1));
+		questao(Math.floor((Math.random() * 20) + 1));
 		$('#neg').slideDown();
 		$('#cert').slideUp();
 		veralt(rel, alt);

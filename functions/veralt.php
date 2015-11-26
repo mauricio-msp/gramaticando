@@ -22,6 +22,9 @@
 			echo $itens->err4;
 		}
 		
+		session_start();
+		var_dump($_SESSION['rand']);
+		
 	endif;
 	
 ?>
