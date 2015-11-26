@@ -187,21 +187,22 @@ and open the template in the editor.
         
         <!-- Janela Modal -->
         
-        <div class="modal fade" id="win-modal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close fechar" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                  </button>
-                  <h4 class="modal-title"> Cargando... </h4>
-                </div>
-                <div class="modal-body">
-                    
-                </div>
-              </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="win-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary but">Sí</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
         
         <!-- ########## SCRIPTS ####33333 -->
           <script type="text/javascript">
@@ -244,6 +245,8 @@ and open the template in the editor.
                  });
                  
                  //Modal 
+                 $('.modal-title').html('Vamos a empezar !!!');
+                 $('.modal-body').html('<center><img src="imagens/gamepad.png"/><center>');
                  $('#win-modal').modal('show');
 				 					
                     $('#win-modal').click(function(){

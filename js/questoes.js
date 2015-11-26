@@ -36,6 +36,7 @@ jQuery(document).ready(function() {
 	$('#yes').click(function(){
 		$('.modal-title').html('Cargando...');
 		$('.modal-body').html(loading);
+                $('.modal-footer').css('display','none');
 		$('footer#dica').slideUp();
 		$('#win-modal').modal('show');
 		var rel = $(this).attr('rel').valueOf();

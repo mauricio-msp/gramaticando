@@ -21,9 +21,11 @@ var tempo = new Number();
                 }
 	 	 
 	    } else {
-			$('.modal-body').html('Tempo esgotado');
-			stoptime = true;
-			$('#win-modal').modal('show');
+                $('.modal-title').html('Fin de su tiempo.');
+                $('.modal-body').html('<center><span class="glyphicon glyphicon-time" style="font-size:250pt;color:#006699;"></span><center>');
+                $('.modal-footer').css('display','none');
+                stoptime = true;
+                $('#win-modal').modal('show');
 	        questao(Math.floor((Math.random() * 14) + 1));
 	    }
 	 

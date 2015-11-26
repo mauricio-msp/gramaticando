@@ -103,7 +103,7 @@ nav#dados ul li a {
     font-size:  14pt;
 }
 
-button {
+button:not(.but) {
     border-radius: 30% !important;
 }
 
