@@ -116,10 +116,10 @@ and open the template in the editor.
         <section id="itens">
             <nav id="alernativas">
                 <ul class="pager">
-                  <li><a href="javascript:void();" rel="item1" id="item1" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item2" id="item2" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item3" id="item3" class="alter">Previous</a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item4" id="item4" class="alter">Previous</a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item1" id="item1" class="alter"></a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item2" id="item2" class="alter"></a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item3" id="item3" class="alter"></a></li> <br/><br/>
+                  <li><a href="javascript:void();" rel="item4" id="item4" class="alter"></a></li> <br/><br/>
                 </ul>
                 <ul class="pager" id="cert">
                         <li><p class="quest">¿Estás seguro?</p></li>
