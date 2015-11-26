@@ -55,7 +55,7 @@ and open the template in the editor.
             });
         </script>
         
-        <!-- Impedir Atualização
+        <!-- Impedir Atualização -->
         <script>
             function Verificar(){
                 var button = window.event.keyCode;
@@ -192,7 +192,7 @@ and open the template in the editor.
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close fechar" data-dismiss="modal" aria-label="Close">
-                  	<span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">&times;</span>
                   </button>
                   <h4 class="modal-title"> Cargando... </h4>
                 </div>
@@ -230,6 +230,7 @@ and open the template in the editor.
                         });
                   });
                  
+                 //Troca de icones
                  $('#jump-one').click(function(){
                     $('span.jumper-I').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
                  });
@@ -246,7 +247,7 @@ and open the template in the editor.
                  $('#win-modal').modal('show');
 				 					
                     $('#win-modal').click(function(){
-						$('#win-modal').modal('hide');
+                        $('#win-modal').modal('hide');
                         stoptime = false;
                         startCountdown();
                     });

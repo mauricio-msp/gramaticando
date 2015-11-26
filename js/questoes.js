@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
 	});
 	
 	$('#yes').click(function(){
-		$('.modal-title').html('Cargando');
+		$('.modal-title').html('Cargando...');
 		$('.modal-body').html(loading);
 		$('footer#dica').slideUp();
 		$('#win-modal').modal('show');
