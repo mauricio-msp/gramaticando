@@ -73,6 +73,9 @@ function veralt(iten, id){
 			if(data == 2){
 				document.getElementById('erro_song').currentTime = 0;
 				document.getElementById('erro_song').play();
+			}else if(data == 1){
+				document.getElementById('acert_song').currentTime = 0;
+				document.getElementById('acert_song').play();
 			}
 			$('#win-modal').modal('hide');
 			stoptime = false;

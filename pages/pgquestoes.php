@@ -66,7 +66,9 @@ and open the template in the editor.
         <header id="question" class="jumbotron">
             <br/>
             <p id="quest" class="text-center"></p>
-            <audio src="sons/tempo-esgotado-MP3-cut.mp3" type="audio/mp3" id="erro_song"></audio>
+            <audio src="sons/efeitos/SOM ERRO EFEITO SONORO.mp3" type="audio/mp3" id="erro_song"></audio>
+            <audio src="sons/efeitos/Som YEAH! Acerto.mp3" type="audio/mp3" id="acert_song"></audio>
+            <audio src="sons/tempo-esgotado-MP3.mp3" type='audio/mp3' id="time_out" loop></audio>
         </header>
         
         <div id="time">
@@ -242,6 +244,8 @@ and open the template in the editor.
                  $('#win-modal').modal('show');
 				 					
                     $('#win-modal').click(function(){
+						document.getElementById('time_out').pause();
+						document.getElementById('time_out').currentTime = 0;
                         $('#win-modal').modal('hide');
                         stoptime = false;
                         startCountdown();

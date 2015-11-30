@@ -5,7 +5,7 @@ var tempo = new Number();
 	var stoptime = false;
       
 	function startCountdown(){
-	    if((tempo - 0) >= 0){
+	    if((tempo - 1) >= 0){
 	        var seg = tempo%60;
 	 
 	        if(seg <=9){
@@ -25,6 +25,8 @@ var tempo = new Number();
                 $('.modal-body').html('<center><span class="glyphicon glyphicon-time" style="font-size:250pt;color:#006699;"></span><center>');
                 $('.modal-footer').css('display','none');
                 stoptime = true;
+				document.getElementById('time_out').currentTime = 0;
+				document.getElementById('time_out').play();
                 $('#win-modal').modal('show');
 	        norand();
 	    }
