@@ -82,7 +82,7 @@ function norand(){
     $.ajax({
         type: 'POST',
         data: {id : id},
-        url: 'function/norand.php',
+        url: 'functions/norand.php',
         success: function (data) {
             questao(data);
         }
