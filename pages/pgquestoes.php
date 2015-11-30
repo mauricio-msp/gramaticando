@@ -68,7 +68,7 @@ and open the template in the editor.
             <p id="quest" class="text-center"></p>
             <audio src="sons/efeitos/SOM ERRO EFEITO SONORO.mp3" type="audio/mp3" id="erro_song"></audio>
             <audio src="sons/efeitos/Som YEAH! Acerto.mp3" type="audio/mp3" id="acert_song"></audio>
-            <audio src="sons/tempo-esgotado-MP3.mp3" type='audio/mp3' id="time_out" loop></audio>
+            <audio src="sons/tempo-esgotado-MP3-cut.mp3" type='audio/mp3' id="time_out" loop></audio>
         </header>
         
         <div id="time">
