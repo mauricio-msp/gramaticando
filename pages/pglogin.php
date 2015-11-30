@@ -14,7 +14,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/login.css" />
         <!--JS Bootstrap 3.3.5 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/ajaxLogin.js"></script>
         <script src="js/bootstrap.js"></script>
     </head>

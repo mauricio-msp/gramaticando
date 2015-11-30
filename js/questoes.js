@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 	});
 	
 	$('.jump').click(function(){
-		questao(Math.floor((Math.random() * 20) + 1));
+                norand();
 		$(this).attr('disabled', 'disabled');
 		$(this).tooltip('destroy');
 	});
@@ -42,10 +42,10 @@ jQuery(document).ready(function() {
 		var rel = $(this).attr('rel').valueOf();
 		var alt = $(this).attr('alt').valueOf();
 		stoptime = true;
-		questao(Math.floor((Math.random() * 20) + 1));
+                veralt(rel, alt);
+                norand();
 		$('#neg').slideDown();
 		$('#cert').slideUp();
-		veralt(rel, alt);
 	});
 	
 	$('#not').click(function(){

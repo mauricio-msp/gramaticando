@@ -16,7 +16,7 @@
 		
 		unset($_SESSION['rand']);
 		$_SESSION['rand'] = '';
-		$_SESSION['qrand'] = 0;
+	
 		
 	?>
 </div>
@@ -43,15 +43,7 @@ and open the template in the editor.
         <script src="js/ajax.js"></script>
         <script>
             $(document).ready(function() {
-                id = Math.floor((Math.random() * 20) + 1);
-                    $.ajax({
-                        type: 'POST',
-                        data: {id : id},
-                        url:  'functions/norand.php',
-                        success: function(data){
-                            questao(data);
-                        }
-                    });
+                 norand();
             });
         </script>
         
@@ -74,12 +66,13 @@ and open the template in the editor.
         <header id="question" class="jumbotron">
             <br/>
             <p id="quest" class="text-center"></p>
+            <audio src="sons/tempo-esgotado.mp3" type="audio/mp3" autoplay></audio>
         </header>
         
         <div id="time">
             <p id="timerest">30s</p>
         </div> 
-        
+       
         <!-- Area das estatísticas -->
         <aside id="static-left" class="jumbotron">
             <h2> Estadísticas </h2>

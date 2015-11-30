@@ -3,10 +3,8 @@
 jQuery(document).ready(function(){
 	$('#form').submit(function(){
 		var input = $(this).serialize();
-		if(input === "" || input === " "){
-			alert('Preencha o campo');
-		}else{
-			$.ajax({
+                    
+                        $.ajax({
 				type: "Post",
 				data: input,
 				url: "functions/funcInserir.php",
@@ -26,7 +24,7 @@ jQuery(document).ready(function(){
 					$('#playGame').removeAttr('disabled');
 				}
 			});
-		}
+		
 		return false;
 	});
 });

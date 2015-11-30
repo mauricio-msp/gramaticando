@@ -26,7 +26,7 @@ var tempo = new Number();
                 $('.modal-footer').css('display','none');
                 stoptime = true;
                 $('#win-modal').modal('show');
-	        questao(Math.floor((Math.random() * 14) + 1));
+	        norand();
 	    }
 	 
 	}

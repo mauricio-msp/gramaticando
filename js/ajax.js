@@ -76,3 +76,15 @@ function veralt(iten, id){
 		}
 	});
 }
+
+function norand(){
+    id = Math.floor((Math.random()*20)+1);
+    $.ajax({
+        type: 'POST',
+        data: {id : id},
+        url: 'function/norand.php',
+        success: function (data) {
+            questao(data);
+        }
+    });
+}
