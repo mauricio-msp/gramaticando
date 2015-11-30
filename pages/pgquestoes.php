@@ -66,7 +66,7 @@ and open the template in the editor.
         <header id="question" class="jumbotron">
             <br/>
             <p id="quest" class="text-center"></p>
-            <audio src="sons/tempo-esgotado.mp3" type="audio/mp3" autoplay></audio>
+            <audio src="sons/tempo-esgotado-MP3-cut.mp3" type="audio/mp3" id="erro_song"></audio>
         </header>
         
         <div id="time">
