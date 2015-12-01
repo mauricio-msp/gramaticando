@@ -16,7 +16,10 @@
 		
 		unset($_SESSION['rand']);
 		$_SESSION['rand'] = '';
-	
+		$_SESSION['money'] = 0;
+		$_SESSION['cont'] = 21;
+		$user->pontuacao = 0;
+		$user->save();
 		
 	?>
 </div>
@@ -84,8 +87,8 @@ and open the template in the editor.
                     <li class="well">
                         <a href="#"> 
                             <p>Dinero R$ <span id="premio">0</span> </p>
-                            <p>Puntuacion <span id="parar">0 pts</span> </p>
-                            <p>Deténgase <span id="perde">0 pts</span> </p>
+                            <p>Puntuacion <span id="parar">0</span> pts </p>
+                            <p>Deténgase <span id="perde">0</span> pts </p>
                         </a>
                     </li>
                     <li class="well">
@@ -94,13 +97,18 @@ and open the template in the editor.
                                 Jugador
                             </span> <br/>
                             <span style="font-size: 12pt;margin-right: 50px;color: #333;">
-                                &rsaquo;&rsaquo;<?php echo $user->nome; ?>
+                                &rsaquo;&rsaquo;<?php echo $user->nome; ?>&lsaquo;&lsaquo;
                             </span> 
                         </a>
                     </li>
                      <li class="well">
                         <a href="#"> 
-                            <span style="text-transform: uppercase;">Faltan</span> <br/>
+                            <span style="text-transform: uppercase;">
+                            	Faltan
+                            </span> <br/>
+                            <span style="font-size: 12pt;margin-right: 50px;color: #333;">
+                                &rsaquo;&rsaquo;<span style="color:#333;" id="rest">20</span>&lsaquo;&lsaquo;
+                            </span>
                         </a>
                     </li>
                 </ul>

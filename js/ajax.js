@@ -53,6 +53,12 @@ function questao(id){
 		}
 		
 	});
+	$.ajax({
+		url: 'functions/rest.php',
+		success: function(data){
+			$('span#rest').html(data);
+		}
+	});
 }
 
 function veralt(iten, id){
@@ -71,12 +77,36 @@ function veralt(iten, id){
 		url:  'functions/veralt.php',
 		success: function(data){
 			if(data == 2){
+				$.ajax({
+					type: 'POST',
+					data: {status : 'erro'},
+					url: 'functions/funcpont.php',
+					success: function(data){
+						$('span#parar').html(data);
+						$('span#perde').html(data / 2);
+					}
+				});
 				document.getElementById('erro_song').currentTime = 0;
 				document.getElementById('erro_song').play();
 			}else if(data == 1){
+				$.ajax({
+					type: 'POST',
+					data: {status : 'acerto'},
+					url: 'functions/funcpont.php',
+					success: function(data){
+						$('span#parar').html(data);
+						$('span#perde').html(data / 2);
+					}
+				});
 				document.getElementById('acert_song').currentTime = 0;
 				document.getElementById('acert_song').play();
 			}
+			$.ajax({
+				url: 'functions/money.php',
+				success: function(data){
+					$('span#premio').html(data);
+				}
+			});
 			$('#win-modal').modal('hide');
 			stoptime = false;
 			startCountdown();
