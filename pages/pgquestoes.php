@@ -86,7 +86,7 @@ and open the template in the editor.
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
                         <a href="#"> 
-                            <p>Dinero R$ <span id="premio">0</span> </p>
+                            <p>Dinero <span id="premio">0</span> R$ </p>
                             <p>Puntuacion <span id="parar">0</span> pts </p>
                             <p>Deténgase <span id="perde">0</span> pts </p>
                         </a>

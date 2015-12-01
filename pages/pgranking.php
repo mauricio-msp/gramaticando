@@ -37,26 +37,26 @@ and open the template in the editor.
                     </tr>
                 </thead>
                 <tbody>
-                	<?php
-                    	require_once 'Classes/DAO/conexao.php';
-						
-						$users = Users::find("all", array("order"=>"pontuacao ASC"));
-						$cont  = 0;
-						
-						foreach($users as $user):
-						$cont++;
-						if($cont == 11 || $user == null):
-							break;
-						endif;
-					?>
+                    <?php
+                    require_once 'Classes/DAO/conexao.php';
+
+                            $users = Users::find("all", array("order"=>"pontuacao ASC"));
+                            $cont  = 0;
+
+                            foreach($users as $user):
+                            $cont++;
+                            if($cont == 11 || $user == null):
+                                    break;
+                            endif;
+                    ?>
                     <tr>
                         <td class="text-center"><?php echo $cont.'º'; ?></td>
                         <td class="text-center"><?php echo $user->nome; ?></td>
                         <td class="text-center"><?php echo $user->pontuacao; ?></td>
                     </tr>
-					<?php
-						endforeach;
-					?>
+                    <?php
+                        endforeach;
+                    ?>
                 </tbody>
                 <tfoot>
                     <tr>
@@ -64,7 +64,7 @@ and open the template in the editor.
                             <span> Derechos de autor
                                 <span class="glyphicon glyphicon-copyright-mark" style="font-size: 11pt;"></span> 
                                 <?php echo date('Y'); ?>
-                                - Todos los derechos reservados..
+                                - Todos los derechos reservados.
                             </span>
                         </td>
                     </tr>
