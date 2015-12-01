@@ -9,7 +9,8 @@ jQuery(document).ready(function() {
 		$.ajax({
 			url: 'functions/funcParar.php',
 			beforeSend: function(){
-				
+				$('.modal-title').html('Cargando...');
+				$('.modal-body').html(loading);
 			},
 			success: function(data){
 				if(data == 1){

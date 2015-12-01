@@ -34,28 +34,29 @@ and open the template in the editor.
                         <th class="text-center">Posº</th>
                         <th class="text-center">Nombre</th>
                         <th class="text-center">Puntuacion</th>
-                        <th class="text-center">Estado</th>
                     </tr>
                 </thead>
                 <tbody>
+                	<?php
+                    	require_once 'Classes/DAO/conexao.php';
+						
+						$users = Users::find("all", array("order"=>"pontuacao ASC"));
+						$cont  = 0;
+						
+						foreach($users as $user):
+						$cont++;
+						if($cont == 11 || $user == null):
+							break;
+						endif;
+					?>
                     <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">Novinha</td>
-                        <td class="text-center">230</td>
-                        <td class="text-center">Xeda</td>
+                        <td class="text-center"><?php echo $cont.'º'; ?></td>
+                        <td class="text-center"><?php echo $user->nome; ?></td>
+                        <td class="text-center"><?php echo $user->pontuacao; ?></td>
                     </tr>
-                    <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">Novinha</td>
-                        <td class="text-center">230</td>
-                        <td class="text-center">Xeda</td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">Novinha</td>
-                        <td class="text-center">230</td>
-                        <td class="text-center">Xeda</td>
-                    </tr>
+					<?php
+						endforeach;
+					?>
                 </tbody>
                 <tfoot>
                     <tr>
