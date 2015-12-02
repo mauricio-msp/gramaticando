@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Dez-2015 às 23:13
+-- Generation Time: 03-Dez-2015 às 00:06
 -- Versão do servidor: 5.6.15-log
 -- PHP Version: 5.4.24
 
@@ -21,21 +21,6 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `gramaticando` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `gramaticando`;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `err_acert`
---
-
-DROP TABLE IF EXISTS `err_acert`;
-CREATE TABLE IF NOT EXISTS `err_acert` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_user` int(11) NOT NULL,
-  `id_quest` int(11) NOT NULL,
-  `item_select` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -128,6 +113,21 @@ INSERT INTO `quests` (`id`, `quest`, `dica`, `itemcorect`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `reports`
+--
+
+DROP TABLE IF EXISTS `reports`;
+CREATE TABLE IF NOT EXISTS `reports` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_user` int(11) NOT NULL,
+  `id_quest` int(11) NOT NULL,
+  `item_select` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `users`
 --
 
@@ -138,14 +138,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `pontuacao` double NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `nome` (`nome`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`id`, `nome`, `pontuacao`) VALUES
-(1, 'DhonataF', 78);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
