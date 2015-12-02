@@ -81,8 +81,8 @@ and open the template in the editor.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">5</span>
-                      Los consejos que valen 200 puntos o R$ 100,00 y los saltos 100 pts o R$ 50,00.
-                      Si completa los 200 puntos y 100 puntos, aparece la opción de compra.
+                      Los consejos que valen 20 puntos o R$ 10,00 y los saltos 10 pts o R$ 5,00.
+                      Si completa los 20 puntos y 10 puntos, aparece la opción de compra.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">6</span>
@@ -94,7 +94,8 @@ and open the template in the editor.
                   </p> <br/>
                   <p>
                       <span class="badge" style="background-color: #0275D8">8</span>
-                      En caso de respuesta incorrecta, el jugador gana el equivalente a la cuarta salida de pts.
+                      Si usted puede conseguir 200 puntos, se añadirán los puntos totales para el dinero (que se transforma en puntos). <br/>&nbsp;&nbsp;&nbsp;
+                      <kbd>EX:</kbd> 200 pts + (R$100,00 o 100 pts) = 300 pts.
                   </p> <br/>
                 </div>
               </div><!-- /.modal-content -->
