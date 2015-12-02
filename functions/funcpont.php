@@ -9,13 +9,14 @@
 	$status = $_POST['status'];
 	
 	if($status == 'acerto'):
-		$_SESSION['money'] = $_SESSION['money'] + 5;
+		$_SESSION['money'] = $_SESSION['money'] + 5 .',00';
 		$user->pontuacao = $user->pontuacao + 10;
 		$user->save();
 	endif;
 	
 	if($status == 'erro'):
-		$user->pontuacao = $user->pontuacao + (10/5);
+                $_SESSION['money'] = $_SESSION['money'] + 0 .',00';
+		$user->pontuacao = $user->pontuacao;
 		$user->save();
 	endif;
 	

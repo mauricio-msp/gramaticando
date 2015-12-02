@@ -86,7 +86,7 @@ and open the template in the editor.
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
                         <a href="#"> 
-                            <p>Dinero <span id="premio">0</span> R$ </p>
+                            <p>Dinero R$<span id="premio">0,00</span> </p>
                             <p>Puntuacion <span id="parar">0</span> pts </p>
                             <p>Deténgase <span id="perde">0</span> pts </p>
                         </a>
@@ -144,7 +144,7 @@ and open the template in the editor.
             <h2> Ayuda </h2>
             
             <nav>
-                <ul class="pager well">
+                <ul class="pager well">   
                     <li data-toggle="tooltip" title="Omitir" data-placement="left">
                         <button class="jump btn btn-default" id="jump-one">
                             <span class="glyphicon glyphicon-share-alt jumper-I"></span>
@@ -169,15 +169,20 @@ and open the template in the editor.
                     </li>
                 </ul>
                 <ul class="pager well">
-                    <li data-toggle="tooltip" title="Informações" data-placement="left">
-                        <a href="#"> 
-                            <span class="glyphicon glyphicon-info-sign"></span>
-                        </a>
+                    <li data-toggle="tooltip" title="Compra" data-placement="left">
+                        <button class="help btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </button>
                     </li>
-                    <li data-toggle="tooltip" title="Ajuda?" data-placement="right">
-                        <a href="#"> 
-                            <span class="glyphicon glyphicon-question-sign"></span>
-                        </a>
+                </ul>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="well">
+                        <span style="font-size: 10pt;text-decoration: underline;color: #222;">&rsaquo;&rsaquo; Desenvolvedores</span> <br/>
+                        &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Dhonata Freitas Holanda</span> <br/>
+                        &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Italo Xavier da Silva</span> <br/>
+                        &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Maurício de Souza Porfírio</span> <br/>
+                        &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Reginaldo Maranhão Sousa</span> <br/>
+                        &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">William Adriano Dantas</span> 
                     </li>
                 </ul>
             </nav>
