@@ -6,10 +6,10 @@
 <file name="pgsql-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303365661" remote="130874354300000000" Dst="1" />
 <file name="pgsql.sql" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303375665" remote="130874354300000000" Dst="1" />
 <file name="sqlite.sql" server="C:/Users/Dhonata/Dropbox/Zcomics/" local="130874354303375665" remote="130874354300000000" Dst="1" />
-<file name="mysql.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130928672072325951" remote="130928672070000000" Dst="0" />
-<file name="oci-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130928672072335952" remote="130928672070000000" Dst="0" />
-<file name="oci.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130928672072345977" remote="130928672070000000" Dst="0" />
-<file name="pgsql-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130928672072345977" remote="130928672070000000" Dst="0" />
-<file name="pgsql.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130928672072355990" remote="130928672070000000" Dst="0" />
-<file name="sqlite.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130928672072536093" remote="130928672070000000" Dst="0" />
+<file name="mysql.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130933131408806942" remote="130933131400000000" Dst="0" />
+<file name="oci-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130933131409137410" remote="130933131400000000" Dst="0" />
+<file name="oci.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130933131409167412" remote="130933131400000000" Dst="0" />
+<file name="pgsql-after-fixtures.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130933131409197471" remote="130933131400000000" Dst="0" />
+<file name="pgsql.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130933131409227456" remote="130933131400000000" Dst="0" />
+<file name="sqlite.sql" server="C:/Users/Dhonata/Dropbox/Gramaticando/" local="130933131409267499" remote="130933131400000000" Dst="0" />
 </dwsync>
