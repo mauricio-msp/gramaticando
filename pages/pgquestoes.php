@@ -17,9 +17,11 @@
 		unset($_SESSION['rand']);
 		$_SESSION['rand'] = '';
 		$_SESSION['money'] = 0;
-		$_SESSION['cont'] = 21;
+		$_SESSION['cont'] = 20;
 		$user->pontuacao = 0;
 		$user->save();
+		
+		Reports::delete_all(array("conditions"=>array("id_user = ?", $_SESSION['user_gram'])));
 		
 	?>
 </div>

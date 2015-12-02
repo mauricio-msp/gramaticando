@@ -2,6 +2,19 @@
 
 function questao(id){
 	$.ajax({
+		url: 'functions/end.php',
+		success: function(data){
+			if(data == 1){
+				window.location = 'itens';
+			}else{
+				end(id);
+			}
+		}
+	});
+}
+
+function end(id){
+	$.ajax({
 		type: 'POST',
 		data: {id : id},
 		url:  'functions/getQuest.php',

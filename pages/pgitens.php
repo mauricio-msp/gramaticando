@@ -1,3 +1,12 @@
+<div hidden="true">
+	<?php
+    	
+		require_once 'Clases/DAO/conexao.php';
+		
+		session_start();
+		
+	?>
+</div>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -28,6 +37,13 @@ and open the template in the editor.
         <section id="resultados" class="jumbotron">
             <h2>Resolución de Problemas</h2>
             <hr>
+            <?php
+            	
+				$id    = $_SESSION['user_gram'];
+				$quest = Quests::find("all", array("conditions"=>array("id_user", $id), "order"=>"id ASC"));
+				
+								
+			?>
             <div class="alert alert-success">
                 Questão certa
             </div>

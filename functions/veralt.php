@@ -2,7 +2,10 @@
 	
 	require_once '../Classes/DAO/conexao.php';
 	
+	session_start();
+	
 	$quest = Quests::find($_POST['id']);
+	$id    = $_POST['id'];
 	$item  = $_POST['iten'];
 	
 	
@@ -12,22 +15,15 @@
 		
 		echo 2;
 		
-//		$itens = Itens::find("all", array("conditions"=>array("id_quest = ?", $_POST['id'])));
-//		$itens = $itens[0];
-//		
-//		if($item == 1){
-//			echo $itens->err1;
-//		}else if($item == 2){
-//			echo $itens->err2;
-//		}else if($item == 3){
-//			echo $itens->err3;
-//		}else if($item == 4){
-//			echo $itens->err4;
-//		}
-//		
-//		session_start();
-//		var_dump($_SESSION['rand']);
-		
+		$itens = Itens::find("all", array("conditions"=>array("id_quest = ?", $_POST['id'])));
+		$itens = $itens[0];
+				
 	endif;
+	
+	$data['id_user']     = $_SESSION['user_gram'];
+	$data['id_quest']    = $id;
+	$data['item_select'] = $item;
+	
+	Reports::create($data);
 	
 ?>
