@@ -40,7 +40,7 @@ and open the template in the editor.
                     <?php
                     require_once 'Classes/DAO/conexao.php';
 
-                            $users = Users::find("all", array("order"=>"pontuacao ASC"));
+                            $users = Users::find("all", array("order"=>"pontuacao DESC"));
                             $cont  = 0;
 
                             foreach($users as $user):
