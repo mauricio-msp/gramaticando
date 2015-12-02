@@ -170,7 +170,7 @@ and open the template in the editor.
                 </ul>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Compra" data-placement="left">
-                        <button class="help btn btn-default">
+                        <button class="btn btn-default">
                             <span class="glyphicon glyphicon-shopping-cart"></span>
                         </button>
                     </li>
