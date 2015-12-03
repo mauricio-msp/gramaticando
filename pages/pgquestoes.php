@@ -156,32 +156,32 @@ and open the template in the editor.
             <nav>
                 <ul class="pager well">   
                     <li data-toggle="tooltip" title="Omitir" data-placement="left">
-                        <button class="jump btn btn-default" id="jump-one">
+                        <button class="jump btn btn-default" id="jump-onej">
                             <span class="glyphicon glyphicon-share-alt jumper-I"></span>
                         </button>
                     </li>
                     <li data-toggle="tooltip" title="Compra" data-placement="right">
-                        <button class="btn btn-primary">
+                        <button class="buy-jump btn btn-primary" id='jump-one'>
                             <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
                         </button>
                     </li><br><br>
                     <li data-toggle="tooltip" title="Omitir" data-placement="left">
-                        <button class="jump btn btn-default" id="jump-two">
+                        <button class="jump btn btn-default" id="jump-twoj">
                             <span class="glyphicon glyphicon-share-alt jumper-II"></span>
                         </button>
                     </li> 
                     <li data-toggle="tooltip" title="Compra" data-placement="right">
-                        <button class="btn btn-primary">
-                            <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
+                        <button class="buy-jump btn btn-primary" id='jump-two'>
+                            <span class="glyphicon glyphicon-usd"  style="color: #FFF;"></span>
                         </button>
                     </li><br><br>
                     <li data-toggle="tooltip" title="Omitir" data-placement="left">
-                        <button class="jump btn btn-default" id="jump-three">
-                            <span class="glyphicon glyphicon-share-alt jumper-III"></span>
+                        <button class="jump btn btn-default" id="jump-threej">
+                            <span class="glyphicon glyphicon-share-alt  jumper-III"></span>
                         </button>
                     </li> 
                     <li data-toggle="tooltip" title="Compra" data-placement="right">
-                        <button class="btn btn-primary">
+                        <button class="buy-jump btn btn-primary" id='jump-three'>
                             <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
                         </button>
                     </li><br><br>
@@ -193,7 +193,7 @@ and open the template in the editor.
                         </button>
                     </li>
                     <li data-toggle="tooltip" title="Compra" data-placement="right">
-                        <button class="btn btn-primary">
+                        <button class="buy-help btn btn-primary">
                             <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
                         </button>
                     </li>
