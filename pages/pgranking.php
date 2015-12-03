@@ -37,26 +37,28 @@ and open the template in the editor.
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    require_once 'Classes/DAO/conexao.php';
+                    <div id="tbody">
+                        <?php
+                        require_once 'Classes/DAO/conexao.php';
 
-                            $users = Users::find("all", array("order"=>"pontuacao DESC"));
-                            $cont  = 0;
+                                $users = Users::find("all", array("order"=>"pontuacao DESC"));
+                                $cont  = 0;
 
-                            foreach($users as $user):
-                            $cont++;
-                            if($cont == 11 || $user == null):
-                                    break;
-                            endif;
-                    ?>
-                    <tr>
-                        <td class="text-center"><?php echo $cont.'º'; ?></td>
-                        <td class="text-center"><?php echo $user->nome; ?></td>
-                        <td class="text-center"><?php echo $user->pontuacao; ?></td>
-                    </tr>
-                    <?php
-                        endforeach;
-                    ?>
+                                foreach($users as $user):
+                                $cont++;
+                                if($cont == 11 || $user == null):
+                                        break;
+                                endif;
+                        ?>
+                        <tr>
+                            <td class="text-center"><?php echo $cont.'º'; ?></td>
+                            <td class="text-center"><?php echo $user->nome; ?></td>
+                            <td class="text-center"><?php echo $user->pontuacao; ?></td>
+                        </tr>
+                        <?php
+                            endforeach;
+                        ?>
+                    </div>
                 </tbody>
                 <tfoot>
                     <tr>

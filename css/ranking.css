@@ -29,7 +29,7 @@ section#ranking {
     
 }
 
-section#ranking > table > tbody {
+section#ranking > table > tbody > div#tbody {
     max-width: 540px;
-    overflow-y: auto;
+    overflow-y: visible;
 }
