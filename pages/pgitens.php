@@ -5,7 +5,7 @@
 		
 		session_start();
 		
-		if(!isset($_SESSION['users_gram'])):
+		if(!isset($_SESSION['user_gram'])):
 			header('location: ');
 		endif;
 		
@@ -83,7 +83,7 @@ and open the template in the editor.
 <div hidden="true">
 	<?php
     	
-		unset($_SESSION['users_gram']);
+		unset($_SESSION['user_gram']);
 		
 	?>
 </div>
