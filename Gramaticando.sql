@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Dez-2015 às 00:06
+-- Generation Time: 04-Dez-2015 às 00:33
 -- Versão do servidor: 5.6.15-log
--- PHP Version: 5.4.24
+-- PHP Version: 5.5.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `gramaticando`
 --
-CREATE DATABASE IF NOT EXISTS `gramaticando` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `gramaticando`;
 
 -- --------------------------------------------------------
 
@@ -108,7 +106,7 @@ INSERT INTO `quests` (`id`, `quest`, `dica`, `itemcorect`) VALUES
 (17, 'SÃ³lo no hay adverbio en:', 'Palabra invariante que funciona como un modificador de un verbo', 3),
 (18, 'CuÃ¡l de los siguientes tiene un adverbio de modo?', 'Ellos son los que nos dicen cÃ³mo sucediÃ³ algo, que pasÃ³, sucediÃ³.', 2),
 (19, 'Las expresiones con tanto celo, siempre y muy, dan sentido a:', 'La Ãºltima expresiÃ³n es la intensidad.', 2),
-(20, 'Complete la frase:', 'La primera palabra no existe en espaÃ±ol.', 2);
+(20, 'Complete la frase: ________ de ese edificio estÃ¡ el mercado.', 'La primera palabra no existe en espaÃ±ol.', 2);
 
 -- --------------------------------------------------------
 
