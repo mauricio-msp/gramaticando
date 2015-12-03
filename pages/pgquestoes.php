@@ -262,16 +262,34 @@ and open the template in the editor.
                   });
                  
                  //Troca de icones
-                 $('#jump-one').click(function(){
+                 $('#jump-onej').click(function(){
                     $('span.jumper-I').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
                  });
                  
-                  $('#jump-two').click(function(){
+                  $('#jump-twoj').click(function(){
                     $('span.jumper-II').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
                  });
                  
-                  $('#jump-three').click(function(){
+                  $('#jump-threej').click(function(){
                     $('span.jumper-III').removeClass('glyphicon glyphicon-share-alt').addClass('glyphicon glyphicon-remove'); 
+                 });
+                 
+                 //Efeito no botão comprar
+                  $('#jump-one').click(function(){
+                    $('span.jumper-I').removeClass('glyphicon glyphicon-remove').addClass('glyphicon glyphicon-share-alt'); 
+                 });
+                 
+                  $('#jump-two').click(function(){
+                    $('span.jumper-II').removeClass('glyphicon glyphicon-remove').addClass('glyphicon glyphicon-share-alt'); 
+                 });
+                 
+                  $('#jump-three').click(function(){
+                    $('span.jumper-III').removeClass('glyphicon glyphicon-remove').addClass('glyphicon glyphicon-share-alt'); 
+                 });
+                 
+                 //Efeito no botão ver dica
+                  $('.buy-help').click(function(){
+                    $('span.see').removeClass('glyphicon glyphicon-eye-close').addClass('glyphicon glyphicon-eye-open'); 
                  });
                  
                  //Modal 
