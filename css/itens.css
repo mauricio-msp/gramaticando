@@ -21,7 +21,7 @@ section#resultados {
     padding: 10px;
 }
 
-section#resultados h2 {
+section#resultados > h2 {
     color: #0275D8;
     margin-top: 10px;
     text-align: center;

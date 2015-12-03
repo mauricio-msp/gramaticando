@@ -32,7 +32,7 @@ header#question {
     border-bottom-right-radius: 100%;
 }
 
-header#question p {
+header#question > p {
     text-align: center;
     color: #036;
 }
@@ -51,7 +51,7 @@ div#time {
     box-shadow: 5px 0 5px rgba(0,0,0,.3);
 }
 
-div#time p {
+div#time > p {
     text-align: center;
     text-indent: -0.1em;
     margin-top: 2px;
@@ -94,12 +94,12 @@ nav#dados {
   width: 100%;
 }
 
-nav#dados ul li {
+nav#dados > ul > li {
     text-align: center;
     text-indent: -2.8em;
 }
 
-nav#dados ul li a {
+nav#dados > ul > li > a {
     font-size:  14pt;
 }
 
@@ -139,7 +139,7 @@ section#itens {
     z-index: 999;
 }
 
-section#itens nav#alernativas ul li a.alter{
+section#itens > nav#alernativas > ul > li > a.alter{
     width: 70%;
     border: none;
 }

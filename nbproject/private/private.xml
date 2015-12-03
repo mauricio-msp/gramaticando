@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/VertrigoServ/www/Gramaticando/js/ajax.js</file>
-            <file>file:/C:/VertrigoServ/www/Gramaticando/js/questoes.js</file>
-            <file>file:/C:/VertrigoServ/www/Gramaticando/functions/norand.php</file>
-            <file>file:/C:/VertrigoServ/www/Gramaticando/js/time.js</file>
+            <file>file:/C:/VertrigoServ/www/Gramaticando/pages/pgitens.php</file>
+            <file>file:/C:/VertrigoServ/www/Gramaticando/pages/pglogin.php</file>
             <file>file:/C:/VertrigoServ/www/Gramaticando/pages/pgquestoes.php</file>
+            <file>file:/C:/VertrigoServ/www/Gramaticando/pages/pgranking.php</file>
         </group>
     </open-files>
 </project-private>

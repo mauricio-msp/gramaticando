@@ -120,10 +120,18 @@ and open the template in the editor.
         <section id="itens">
             <nav id="alernativas">
                 <ul class="pager">
-                  <li><a href="javascript:void();" rel="item1" id="item1" class="alter"></a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item2" id="item2" class="alter"></a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item3" id="item3" class="alter"></a></li> <br/><br/>
-                  <li><a href="javascript:void();" rel="item4" id="item4" class="alter"></a></li> <br/><br/>
+                  <li data-toggle="tooltip" title="Artículo A" data-placement="left">
+                      <a href="javascript:void();" rel="item1" id="item1" class="alter"></a>
+                  </li> <br/><br/>
+                  <li data-toggle="tooltip" title="Artículo B" data-placement="left">
+                      <a href="javascript:void();" rel="item2" id="item2" class="alter"></a>
+                  </li> <br/><br/>
+                  <li data-toggle="tooltip" title="Artículo C" data-placement="left">
+                      <a href="javascript:void();" rel="item3" id="item3" class="alter"></a>
+                  </li> <br/><br/>
+                  <li data-toggle="tooltip" title="Artículo D" data-placement="left">
+                      <a href="javascript:void();" rel="item4" id="item4" class="alter"></a>
+                  </li> <br/><br/>
                 </ul>
                 <ul class="pager" id="cert">
                         <li><p class="quest">¿Estás seguro?</p></li>

@@ -9,7 +9,7 @@ html,body {
     font-family: 'Square721 BT', sans-serif; 
 }
 
-section#areaForm h2 {
+section#areaForm > h2 {
     color: #FFF;
     position: absolute;
     top: -18%;
@@ -51,7 +51,7 @@ input[type=text] {
     font-size: 18pt;
 }
 
-nav#menu ul li {
+nav#menu > ul > li {
     padding: 8px;
 }
 

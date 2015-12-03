@@ -19,15 +19,17 @@ section#ranking {
     display: block;
     margin: 0 auto;
     width: 50%;
+    max-height: 620px;
     margin-top: 2%;
     margin-bottom: 2%;
     background-color: #FFF;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    overflow: visible;
+    
 }
 
-
-
-
+section#ranking > table > tbody {
+    max-width: 540px;
+    overflow-y: auto;
+}
