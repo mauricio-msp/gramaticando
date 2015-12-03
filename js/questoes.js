@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
 			},
 			success: function(data){
 				if(data == 1){
-                                    window.location = 'login';
+					window.location = 'itens';
 				}
 			}
 		});

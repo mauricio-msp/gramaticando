@@ -1,9 +1,13 @@
-<div hidden="true">
+<div>
 	<?php
     	
-		require_once 'Clases/DAO/conexao.php';
+		require_once 'Classes/DAO/conexao.php';
 		
 		session_start();
+		
+		if(!isset($_SESSION['users_gram'])):
+			header('location: ');
+		endif;
 		
 	?>
 </div>
@@ -39,10 +43,31 @@ and open the template in the editor.
             <hr>
             <?php
             	
-				$id    = $_SESSION['user_gram'];
-				$quest = Quests::find("all", array("conditions"=>array("id_user", $id), "order"=>"id ASC"));
+				$id     = $_SESSION['user_gram'];
+				$reports = Reports::find("all", array("conditions"=>array("id_user", $id), "order"=>"id ASC"));
 				
-								
+				foreach($reports as $report):
+					$quest = Quests::find($report->id_quest);
+					if($report->item_select == $quest->itemcorect):
+						echo('
+						<div class="alert alert-success">
+							'.$quest->quest.'
+						</div>
+						');
+					else:
+						$iten  = Itens::find(array("conditions"=>array("id_quest", $report->id_quest)));
+						$erro  = 'err'.$report->item_select;
+						$itenc = 'item'.$quest->itemcorect;
+						echo('
+						<div class="alert alert-danger">
+							'.$quest->quest.'<br>
+							'.$iten->$erro.'<br>
+							'.$iten->$itenc.'
+						</div>
+						');
+					endif;
+				endforeach;
+						
 			?>
             <div class="alert alert-success">
                 Questão certa
@@ -55,5 +80,10 @@ and open the template in the editor.
     </body>
     
 </html>
-
-
+<div hidden="true">
+	<?php
+    	
+		unset($_SESSION['users_gram']);
+		
+	?>
+</div>
