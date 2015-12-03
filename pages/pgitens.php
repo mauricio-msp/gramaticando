@@ -6,7 +6,7 @@
 		session_start();
 		
 		if(!isset($_SESSION['user_gram'])):
-			header('location: ');
+			header('location: login');
 		endif;
 		
 	?>
