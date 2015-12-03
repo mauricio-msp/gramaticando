@@ -118,11 +118,11 @@ function veralt(iten, id){
 				url: 'functions/money.php',
 				success: function(data){
 					$('span#premio').html(data);
+					$('#win-modal').modal('hide');
+					stoptime = false;
+					startCountdown();
 				}
 			});
-			$('#win-modal').modal('hide');
-			stoptime = false;
-			startCountdown();
 		}
 	});
 }

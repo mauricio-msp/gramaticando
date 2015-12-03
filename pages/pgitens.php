@@ -44,7 +44,7 @@ and open the template in the editor.
             <?php
             	
 				$id     = $_SESSION['user_gram'];
-				$reports = Reports::find("all", array("conditions"=>array("id_user", $id), "order"=>"id ASC"));
+				$reports = Reports::find("all", array("conditions"=>array("id_user = ", $id), "order"=>"id ASC"));
 				
 				foreach($reports as $report):
 					$quest = Quests::find($report->id_quest);
@@ -69,13 +69,6 @@ and open the template in the editor.
 				endforeach;
 						
 			?>
-            <div class="alert alert-success">
-                Questão certa
-            </div>
-            <div class="alert alert-danger">
-                Questão errada <br>
-                Justificativa
-            </div>
         </section>
     </body>
     

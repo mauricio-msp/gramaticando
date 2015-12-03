@@ -17,7 +17,7 @@
 		unset($_SESSION['rand']);
 		$_SESSION['rand'] = '';
 		$_SESSION['money'] = 0;
-		$_SESSION['cont'] = 20;
+		$_SESSION['cont'] = 21;
 		$user->pontuacao = 0;
 		$user->save();
 		
