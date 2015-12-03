@@ -35,13 +35,14 @@ jQuery(document).ready(function() {
 	$('.alter').click(function(){
 		var rel = $(this).attr('rel').valueOf();
 		$('.alter').css('background-color','#FFF');
-		$(this).css('background-color','green');
+		$(this).css('background-color','#87CEEB');
 		$('#yes').attr('rel', rel);
 		$('#neg').slideUp();
 		$('#cert').slideDown();
 	});
 	
 	$('#yes').click(function(){
+                $('.alter').css('background-color','#FFF');
 		$('.modal-title').html('Cargando...');
 		$('.modal-body').html(loading);
 		$('.modal-footer').css('display','none');

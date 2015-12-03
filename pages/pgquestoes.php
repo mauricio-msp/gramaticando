@@ -159,17 +159,32 @@ and open the template in the editor.
                         <button class="jump btn btn-default" id="jump-one">
                             <span class="glyphicon glyphicon-share-alt jumper-I"></span>
                         </button>
-                    </li> <br><br>
+                    </li>
+                    <li data-toggle="tooltip" title="Compra" data-placement="right">
+                        <button class="btn btn-primary">
+                            <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
+                        </button>
+                    </li><br><br>
                     <li data-toggle="tooltip" title="Omitir" data-placement="left">
                         <button class="jump btn btn-default" id="jump-two">
                             <span class="glyphicon glyphicon-share-alt jumper-II"></span>
                         </button>
-                    </li> <br><br>
+                    </li> 
+                    <li data-toggle="tooltip" title="Compra" data-placement="right">
+                        <button class="btn btn-primary">
+                            <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
+                        </button>
+                    </li><br><br>
                     <li data-toggle="tooltip" title="Omitir" data-placement="left">
                         <button class="jump btn btn-default" id="jump-three">
                             <span class="glyphicon glyphicon-share-alt jumper-III"></span>
                         </button>
-                    </li> <br><br>
+                    </li> 
+                    <li data-toggle="tooltip" title="Compra" data-placement="right">
+                        <button class="btn btn-primary">
+                            <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
+                        </button>
+                    </li><br><br>
                 </ul>
                 <ul class="pager well">
                     <li data-toggle="tooltip" title="Ver Sugerencia" data-placement="left">
@@ -177,11 +192,9 @@ and open the template in the editor.
                             <span class="glyphicon glyphicon-eye-open see"></span>
                         </button>
                     </li>
-                </ul>
-                <ul class="pager well">
-                    <li data-toggle="tooltip" title="Compra" data-placement="left">
-                        <button class="btn btn-default">
-                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <li data-toggle="tooltip" title="Compra" data-placement="right">
+                        <button class="btn btn-primary">
+                            <span class="glyphicon glyphicon-usd" style="color: #FFF;"></span>
                         </button>
                     </li>
                 </ul>
