@@ -28,6 +28,7 @@ jQuery(document).ready(function() {
 		$('.modal-body').html(loading);
 		$('.modal-footer').css('display','none');
 		$('#win-modal').modal('show');
+		$('footer#dica').slideUp();
         norand();
 		setTimeout("$('#win-modal').modal('hide')", 1000);
 		if($(this).attr('id').valueOf() == 'jump-onej'){
@@ -51,7 +52,7 @@ jQuery(document).ready(function() {
 	});
 	
 	$('#yes').click(function(){
-                $('.alter').css('background-color','#FFF');
+		$('.alter').css('background-color','#FFF');
 		$('.modal-title').html('Cargando...');
 		$('.modal-body').html(loading);
 		$('.modal-footer').css('display','none');
@@ -83,14 +84,70 @@ jQuery(document).ready(function() {
 	});
 	
 	$('.buy-help').click(function(){
-		$('.help').removeAttr('disabled');
-		$(this).fadeOut(500);
+		$.ajax({
+			type: 'POST',
+			data: {val : 10},
+			url: 'functions/buy.php',
+			beforeSend: function(){
+				$('.modal-title').html('Cargando...');
+				$('.modal-body').html(loading);
+				$('.modal-footer').css('display','none');
+				$('#win-modal').modal('show');
+			},
+			success: function(data){
+				if(data == 1){
+					$('.help').removeAttr('disabled');
+					$(this).fadeOut(500);
+					$('#win-modal').modal('hide');
+					$.ajax({
+						url: 'functions/money.php',
+						success: function(data){
+							$('span#premio').html(data);
+							$('#win-modal').modal('hide');
+							stoptime = false;
+							startCountdown();
+						}
+					});
+				}else if(data == 2){
+					$('.modal-title').html('Aviso!');
+					$('.modal-body').html('voce não tem dinheiro suficiente para a compra deste iten');
+				}
+			}
+		});
 	});
 	
 	$('.buy-jump').click(function(){
-		var btn = $(this).attr('id').valueOf() + 'j';
-		$('#'+btn).removeAttr('disabled');
-		$(this).fadeOut(500);
+		var hab = false;
+		$.ajax({
+			type: 'POST',
+			data: {val : 5},
+			url: 'functions/buy.php',
+			beforeSend: function(){
+				$('.modal-title').html('Cargando...');
+				$('.modal-body').html(loading);
+				$('.modal-footer').css('display','none');
+				$('#win-modal').modal('show');
+			},
+			success: function(data){
+				if(data == 1){
+					hab = true;
+					$.ajax({
+						url: 'functions/money.php',
+						success: function(data){
+							$('span#premio').html(data);
+							$('#win-modal').modal('hide');
+						}
+					});
+				}else{
+					$('.modal-title').html('Aviso!');
+					$('.modal-body').html('voce não tem dinheiro suficiente para a compra deste iten');
+				}
+			}
+		});
+		if(hab){
+			$('#'+$(this).attr('id') + 'j').removeAttr('disabled');
+			$(this).fadeOut(500);
+		}
 	});
 	
 });
