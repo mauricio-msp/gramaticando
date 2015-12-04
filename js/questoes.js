@@ -5,14 +5,18 @@ jQuery(document).ready(function() {
 	$('.buy-jump').hide();
 	$('.buy-help').hide();
 	
-	var loading = '<img src="imagens/ajax-loader (1).gif" alt="" class="center-block">';
+	var loading = '<figure id="loading"><img src="imagens/ajax-loader (1).gif" alt="" class="center-block"></figure>';
 	
 	$('#stop').click(function(){
 		$.ajax({
 			url: 'functions/funcParar.php',
 			beforeSend: function(){
+				$('.alter').css('background-color','#FFF');
 				$('.modal-title').html('Cargando...');
 				$('.modal-body').html(loading);
+				$('#exit').css('display', 'none');
+				$('.modal-footer').css('display','none');
+				$('#win-modal').modal('show');
 			},
 			success: function(data){
 				if(data == 1){
@@ -24,13 +28,16 @@ jQuery(document).ready(function() {
 	});
 	
 	$('.jump').click(function(){
+		$('.alter').css('background-color','#FFF');
 		$('.modal-title').html('Cargando...');
 		$('.modal-body').html(loading);
+		$('#exit').css('display', 'none');
 		$('.modal-footer').css('display','none');
 		$('#win-modal').modal('show');
 		$('footer#dica').slideUp();
         norand();
 		setTimeout("$('#win-modal').modal('hide')", 1000);
+		$('#exit').css('display', 'block');
 		if($(this).attr('id').valueOf() == 'jump-onej'){
 			$('#jump-one').fadeIn(500);
 		}else if($(this).attr('id').valueOf() == 'jump-twoj'){
@@ -56,6 +63,7 @@ jQuery(document).ready(function() {
 		$('.modal-title').html('Cargando...');
 		$('.modal-body').html(loading);
 		$('.modal-footer').css('display','none');
+		$('#exit').css('display', 'none');
 		$('footer#dica').slideUp();
 		$('#win-modal').modal('show');
 		var rel = $(this).attr('rel').valueOf();
@@ -92,6 +100,7 @@ jQuery(document).ready(function() {
 				stoptime = true;
 				$('.modal-title').html('Cargando...');
 				$('.modal-body').html(loading);
+				$('#exit').css('display', 'none');
 				$('.modal-footer').css('display','none');
 				$('#win-modal').modal('show');
 			},
@@ -102,6 +111,7 @@ jQuery(document).ready(function() {
 					$('.help').removeAttr('disabled');
 					$('.buy-help').fadeOut(500);
 					$('#win-modal').modal('hide');
+					$('#exit').css('display', 'block');
 					$.ajax({
 						url: 'functions/money.php',
 						success: function(data){
@@ -129,6 +139,7 @@ jQuery(document).ready(function() {
 				stoptime = true;
 				$('.modal-title').html('Cargando...');
 				$('.modal-body').html(loading);
+				$('#exit').css('display', 'none');
 				$('.modal-footer').css('display','none');
 				$('#win-modal').modal('show');
 			},
@@ -143,6 +154,7 @@ jQuery(document).ready(function() {
 						success: function(data){
 							$('span#premio').html(data);
 							$('#win-modal').modal('hide');
+							$('#exit').css('display', 'block');
 							stoptime = false;
 							startCountdown();
 						}

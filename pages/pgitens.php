@@ -50,7 +50,7 @@ and open the template in the editor.
             <?php
             	
 				$id     = $_SESSION['user_gram'];
-				$reports = Reports::find("all", array("conditions"=>array("id_user = ", $id), "order"=>"id ASC"));
+				$reports = Reports::find("all", array("conditions"=>array("id_user = ?", $id), "order"=>"id ASC"));
 				
 				foreach($reports as $report):
 					$quest = Quests::find($report->id_quest);
@@ -67,6 +67,7 @@ and open the template in the editor.
 						echo('
 						<div class="alert alert-danger">
 							'.$quest->quest.'<br>
+							'.$report->item_select.'<br>
 							'.$iten->$erro.'<br>
 							'.$iten->$itenc.'
 						</div>
@@ -82,7 +83,7 @@ and open the template in the editor.
 <div hidden="true">
 	<?php
     	
-		unset($_SESSION['user_gram']);
+		//unset($_SESSION['user_gram']);
 		
 	?>
 </div>

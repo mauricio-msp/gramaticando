@@ -6558,6 +6558,8 @@ button.close {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 167px;
+  margin-bottom: 200px;
 }
 .pull-right {
   float: right !important;

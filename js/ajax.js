@@ -119,6 +119,7 @@ function veralt(iten, id){
 				success: function(data){
 					$('span#premio').html(data);
 					$('#win-modal').modal('hide');
+					$('#exit').css('display', 'block');
 					stoptime = false;
 					startCountdown();
 				}

@@ -2,7 +2,7 @@
 	
     session_start();
 	
-	if($_SESSION['cont'] == 0):
+	if($_SESSION['cont'] == 1):
 		echo 1;
 	else:
 		echo 2;

@@ -57,9 +57,12 @@ and open the template in the editor.
             function Verificar(){
                 var button = window.event.keyCode;
                 if (button === 116) {
-                    alert("ERROR! : Proibido atualizar página"); 
+					$('.modal-title').html('ERROR!');
+					$('.modal-body').html("Actualización Prohibida la página");
+					$('.modal-footer').css('display','none');
+					$('#win-modal').modal('show');
                     event.keyCode = 0;
-                    event.returnValue=false;
+                    event.returnValue = false;
                 }
             }
         </script>
@@ -222,7 +225,7 @@ and open the template in the editor.
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span id="exit" aria-hidden="true">&times;</span></button>
               <h4 class="modal-title">Modal title</h4>
             </div>
             <div class="modal-body">
