@@ -49,8 +49,8 @@ and open the template in the editor.
             <hr>
             <?php
             	
-				$id     = $_SESSION['user_gram'];
-				$reports = Reports::find("all", array("conditions"=>array("id_user = ?", $id), "order"=>"id ASC"));
+				$id      = $_SESSION['user_gram'];
+				$reports = Reports::find("all", array("conditions"=>array("id_user = ?", $id)));
 				
 				foreach($reports as $report):
 					$quest = Quests::find($report->id_quest);
@@ -61,15 +61,16 @@ and open the template in the editor.
 						</div>
 						');
 					else:
-						$iten  = Itens::find(array("conditions"=>array("id_quest", $report->id_quest)));
+						$iten  = Itens::find(array("conditions"=>array("id_quest = ?", $report->id_quest)));
 						$erro  = 'err'.$report->item_select;
-						$itenc = 'item'.$quest->itemcorect;
+						$itemm = 'item'.$report->item_select;
+						$itemc = 'item'.$quest->itemcorect;
 						echo('
 						<div class="alert alert-danger">
-							'.$quest->quest.'<br>
-							'.$report->item_select.'<br>
-							'.$iten->$erro.'<br>
-							'.$iten->$itenc.'
+							<strong>Questão:</strong> '.$quest->quest.'<br>
+							<strong>Item marcado:</strong> '.$iten->$itemm.'<br>
+							<strong>Erro:</strong> '.$iten->$erro.'<br>
+							<strong>Item correto:</strong> '.$iten->$itemc.'
 						</div>
 						');
 					endif;

@@ -204,7 +204,7 @@ and open the template in the editor.
                 </ul>
                 <ul class="nav nav-pills nav-stacked">
                     <li class="well">
-                        <span style="font-size: 10pt;text-decoration: underline;color: #222;">&rsaquo;&rsaquo; Desenvolvedores</span> <br/>
+                        <span style="font-size: 10pt;text-decoration: underline;color: #222;">&rsaquo;&rsaquo; Desarrolladores</span> <br/>
                         &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Dhonata Freitas Holanda</span> <br/>
                         &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Italo Xavier da Silva</span> <br/>
                         &nbsp;&nbsp;<span style="font-size: 9pt;color: #222;">Maurício de Souza Porfírio</span> <br/>
