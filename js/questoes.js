@@ -89,6 +89,7 @@ jQuery(document).ready(function() {
 			data: {val : 10},
 			url: 'functions/buy.php',
 			beforeSend: function(){
+				stoptime = true;
 				$('.modal-title').html('Cargando...');
 				$('.modal-body').html(loading);
 				$('.modal-footer').css('display','none');
@@ -96,8 +97,10 @@ jQuery(document).ready(function() {
 			},
 			success: function(data){
 				if(data == 1){
+					document.getElementById('buy_song').currentTime = 0;
+					document.getElementById('buy_song').play();
 					$('.help').removeAttr('disabled');
-					$(this).fadeOut(500);
+					$('.buy-help').fadeOut(500);
 					$('#win-modal').modal('hide');
 					$.ajax({
 						url: 'functions/money.php',
@@ -117,12 +120,13 @@ jQuery(document).ready(function() {
 	});
 	
 	$('.buy-jump').click(function(){
-		var hab = false;
+		var id = '#' + $(this).attr('id').valueOf();
 		$.ajax({
 			type: 'POST',
 			data: {val : 5},
 			url: 'functions/buy.php',
 			beforeSend: function(){
+				stoptime = true;
 				$('.modal-title').html('Cargando...');
 				$('.modal-body').html(loading);
 				$('.modal-footer').css('display','none');
@@ -130,24 +134,26 @@ jQuery(document).ready(function() {
 			},
 			success: function(data){
 				if(data == 1){
-					hab = true;
+					document.getElementById('buy_song').currentTime = 0;
+					document.getElementById('buy_song').play();
+					$(id).fadeOut(500);
+					$(id + 'j').removeAttr('disabled');
 					$.ajax({
 						url: 'functions/money.php',
 						success: function(data){
 							$('span#premio').html(data);
 							$('#win-modal').modal('hide');
+							stoptime = false;
+							startCountdown();
 						}
 					});
 				}else{
 					$('.modal-title').html('Aviso!');
-					$('.modal-body').html('voce não tem dinheiro suficiente para a compra deste iten');
+					$('.modal-body').html('voce não tem dinheiro suficiente para a compra deste item');
 				}
 			}
 		});
-		if(hab){
-			$('#'+$(this).attr('id') + 'j').removeAttr('disabled');
-			$(this).fadeOut(500);
-		}
+		
 	});
 	
 });
