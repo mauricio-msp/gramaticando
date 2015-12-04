@@ -33,3 +33,10 @@ nav#back {
     top: 2%;
     left: 5%;
 }
+
+nav#next {
+    border: none;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}

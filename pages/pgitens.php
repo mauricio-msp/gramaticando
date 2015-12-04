@@ -38,6 +38,12 @@ and open the template in the editor.
             </ul>
         </nav>
         
+        <nav id="next">
+            <ul class="pager">
+              <li class="next"><a href='ranking'>Clasificación <span aria-hidden="true">&rarr;</span> </a></li>
+            </ul>
+        </nav>
+        
         <section id="resultados" class="jumbotron">
             <h2>Resolución de Problemas</h2>
             <hr>
