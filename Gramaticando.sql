@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Dez-2015 às 01:13
+-- Generation Time: 04-Dez-2015 às 04:57
 -- Versão do servidor: 5.6.15-log
--- PHP Version: 5.5.8
+-- PHP Version: 5.4.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `gramaticando`
 --
+CREATE DATABASE IF NOT EXISTS `gramaticando` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `gramaticando`;
 
 -- --------------------------------------------------------
 
