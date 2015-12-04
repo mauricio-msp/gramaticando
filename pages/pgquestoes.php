@@ -218,7 +218,7 @@ and open the template in the editor.
         
         <!-- Janela Modal -->
         
-        <div class="modal fade" tabindex="-1" role="dialog" id="win-modal">
+        <div class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" id="win-modal">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -299,13 +299,15 @@ and open the template in the editor.
                  $('#win-modal').modal('show');
 				 					
                     $('#win-modal').click(function(){
-						document.getElementById('time_out').pause();
-						document.getElementById('time_out').currentTime = 0;
-                        $('#win-modal').modal('hide');
-                        stoptime = false;
-                        startCountdown();
+						if($('.modal-title').html().valueOf() != 'Cargando...'){
+							document.getElementById('time_out').pause();
+							document.getElementById('time_out').currentTime = 0;
+							$('#win-modal').modal('hide');
+							stoptime = false;
+							startCountdown();
+						}
                     });
-				 
+					
                });
           </script>
     </body>
