@@ -67,10 +67,10 @@ and open the template in the editor.
 						$itemc = 'item'.$quest->itemcorect;
 						echo('
 						<div class="alert alert-danger">
-							<strong>Questão:</strong> '.$quest->quest.'<br>
-							<strong>Item marcado:</strong> '.$iten->$itemm.'<br>
-							<strong>Erro:</strong> '.$iten->$erro.'<br>
-							<strong>Item correto:</strong> '.$iten->$itemc.'
+							<strong>Edición:</strong> '.$quest->quest.'<br>
+							<strong>Elemento resaltado:</strong> '.$iten->$itemm.'<br>
+							<strong>Error:</strong> '.$iten->$erro.'<br>
+							<strong>Artículo correcto:</strong> '.$iten->$itemc.'
 						</div>
 						');
 					endif;

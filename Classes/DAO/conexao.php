@@ -19,5 +19,5 @@
 	$cfg = ActiveRecord\Config::instance();
  	$cfg->set_model_directory($model);
 	$cfg->set_connections(array('development' =>
-	  'mysql://ZComics:6969@localhost/gramaticando'));
+	  'mysql://root:vertrigo@localhost/gramaticando'));
 		
