@@ -112,8 +112,8 @@ jQuery(document).ready(function() {
 						}
 					});
 				}else if(data == 2){
-					$('.modal-title').html('Aviso!');
-					$('.modal-body').html('voce não tem dinheiro suficiente para a compra deste iten');
+					$('.modal-title').html('¡Advertencia!');
+					$('.modal-body').html('usted no tiene suficiente dinero para comprar este artículo.');
 				}
 			}
 		});
@@ -148,8 +148,8 @@ jQuery(document).ready(function() {
 						}
 					});
 				}else{
-					$('.modal-title').html('Aviso!');
-					$('.modal-body').html('voce não tem dinheiro suficiente para a compra deste item');
+					$('.modal-title').html('¡Advertencia!');
+					$('.modal-body').html('usted no tiene suficiente dinero para comprar este artículo.');
 				}
 			}
 		});
