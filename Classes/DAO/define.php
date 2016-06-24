@@ -2,7 +2,7 @@
 
 define('HOST', 'localhost');
 define('USER', 'root');
-define('PASS', 'vertrigo');
+define('PASS', '');
 define('DBSA', 'gramaticando'); 
          
 
